@@ -11,7 +11,6 @@ import {
   InnerForm,
   InputField
 } from "./Header.styles";
-import "./Header.styles.css";
 
 const Header = () => {
   return (
