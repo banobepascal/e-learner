@@ -39,8 +39,7 @@ const Header = () => {
         </FormContainer>
         <OptionLinks to="/">Courses</OptionLinks>
         <OptionLinks to="/">About</OptionLinks>
-        <AuthButton style={{background: "transparent", color: "#000", border: "1px solid #000"}}>Log In</AuthButton>
-        <AuthButton>Sign Up</AuthButton>
+        <AuthButton>Log In</AuthButton>
       </OptionsContainer>
     </HeaderContainer>
   );
