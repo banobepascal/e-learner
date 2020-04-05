@@ -2,23 +2,21 @@ import React from "react";
 
 import CustomButton from "../../components/Custom-Button/Custom-Button.component";
 import {
-  BackgroundContainer,
-  BackgroundContent,
+  HomepageContainer,
+  MainSection,
   StartedButton,
 } from "./Homepage.styles";
 
 const Homepage = () => {
   return (
-    <div>
-      <BackgroundContainer>
-        <BackgroundContent>
-          <h1>Get The Best Free Online Courses</h1>
-          <StartedButton>
-            <CustomButton>Get Started</CustomButton>
-          </StartedButton>
-        </BackgroundContent>
-      </BackgroundContainer>
-    </div>
+    <HomepageContainer>
+      <MainSection>
+        <h1>Get your Education today</h1>
+        <StartedButton>
+          <CustomButton>Get Started</CustomButton>
+        </StartedButton>
+      </MainSection>
+    </HomepageContainer>
   );
 };
 
