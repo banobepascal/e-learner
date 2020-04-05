@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderContainer = styled.div`
-  height: 70px;
+  height: 12vh;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -11,17 +11,18 @@ export const HeaderContainer = styled.div`
   font-family: "Poppins", sans-serif;
   font-size: 1em;
   color: #000;
+  overflow: hidden;
 `;
 
 export const LogoContainer = styled(Link)`
   width: 20%;
   display: flex;
-  padding: 10px 0;
+  padding: 15px 0;
 
   p {
     font-family: "Fredoka One", cursive;
     text-transform: uppercase;
-    color: #FC3C64;
+    color: #fc3c64;
     margin: 3px 2px 0 0;
     padding: 6px 0px;
     font-size: 1.5em;
@@ -59,12 +60,8 @@ export const AuthButton = styled.button`
   color: #fff;
   border: 0;
   cursor: pointer;
-  background: #FC3C64;
+  background: #fc3c64;
   transition: all 0.2s ease-out, color 0.2s ease-out;
-
-  &:firt-child {
-    background: transparent;
-  }
 
   &:focus,
   &:hover,
@@ -120,12 +117,12 @@ export const InputField = styled.div`
     color: #fff;
     border: 0;
     cursor: pointer;
-    background: #FC3C64;
+    background: #fc3c64;
     transition: all 0.2s ease-out, color 0.2s ease-out;
     outline: none;
 
     &:hover {
-        background: #E44F6E;
+      background: #e44f6e;
     }
   }
 `;
