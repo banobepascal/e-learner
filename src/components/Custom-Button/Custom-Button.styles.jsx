@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CustomButtonContainer = styled.div`
   font-size: 1em;
-  padding: 12px 22px;
+  padding: 12px 25px;
   color: #fff;
   border: 0;
   cursor: pointer;

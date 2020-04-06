@@ -53,24 +53,9 @@ export const OptionLinks = styled(Link)`
   }
 `;
 
-export const AuthButton = styled.button`
-  font-size: 15px;
-  margin: 0 2px;
-  padding: 12px 22px;
-  color: #fff;
-  border: 0;
+export const AuthButton = styled.div`
   cursor: pointer;
-  background: #fc3c64;
   transition: all 0.2s ease-out, color 0.2s ease-out;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-    outline: none;
-  }
 `;
 
 export const FormContainer = styled.form`
@@ -91,7 +76,7 @@ export const InnerForm = styled.div`
 `;
 
 export const InputField = styled.div`
-  height: 3rem;
+  height: 2.9rem;
   width: 100%;
 
   input {
@@ -100,9 +85,10 @@ export const InputField = styled.div`
     border: 0;
     display: block;
     width: 100%;
-    padding: 10px 32px;
     font-size: 16px;
     outline: none;
+    padding-left: 0.5em;
+
 
     &:placeholder {
       color: #888;

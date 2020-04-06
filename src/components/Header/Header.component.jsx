@@ -1,5 +1,6 @@
 import React from "react";
 
+import CustomButton from "../Custom-Button/Custom-Button.component";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import {
   HeaderContainer,
@@ -39,7 +40,11 @@ const Header = () => {
         </FormContainer>
         <OptionLinks to="/">Courses</OptionLinks>
         <OptionLinks to="/">About</OptionLinks>
-        <AuthButton>Log In</AuthButton>
+        <AuthButton>
+        <CustomButton>
+          Log In
+        </CustomButton>
+       </AuthButton>
       </OptionsContainer>
     </HeaderContainer>
   );
