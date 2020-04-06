@@ -23,8 +23,7 @@ export const LogoContainer = styled(Link)`
     font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     color: #fc3c64;
-    margin: 3px 2px 0 0;
-    padding: 6px 0px;
+    padding: 8px 2px 0 0;
     font-size: 1.5em;
   }
 
