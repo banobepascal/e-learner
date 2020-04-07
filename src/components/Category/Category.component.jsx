@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-import { CategoryContainer } from "./Category.styles";
+import { CategoryContainer, CategoryTitle } from "./Category.styles";
 
 const Category = ({
   title,
@@ -14,11 +14,11 @@ const Category = ({
       <Card>
         <Card.Img variant="top" src={categoryImageUrl} />
         <Card.Body style={{ padding: "40px 35px" }}>
-          <Card.Title>{title}</Card.Title>
+          <CategoryTitle>{title}</CategoryTitle>
           <Card.Text>{description}</Card.Text>
-          <Card.Title style={{ color: "#fc3c64" }}>
+          <Card.Text style={{ color: "#fc3c64" }}>
             {numberOfCourses} <span>courses</span>{" "}
-          </Card.Title>
+          </Card.Text>
         </Card.Body>
       </Card>
     </CategoryContainer>

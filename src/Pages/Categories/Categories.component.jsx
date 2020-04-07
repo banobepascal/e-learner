@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import APP_DATA from "./Categories.data";
 import Category from "../../components/Category/Category.component";
-import { CategoriesPageContainer, CategoryHeader } from "./Categories.styles";
+import { CategoriesPageContainer, CategoriesHeader } from "./Categories.styles";
 
 class Categories extends Component {
   state = {
@@ -13,11 +13,11 @@ class Categories extends Component {
 
     return (
       <div>
-        <CategoryHeader>
+        <CategoriesHeader>
           <h4>
              Categories
           </h4>
-        </CategoryHeader>
+        </CategoriesHeader>
         <CategoriesPageContainer>
           {categories.map(({ id, ...otherCollectionProps }) => (
             <Category key={id} {...otherCollectionProps} />
