@@ -7,9 +7,10 @@ export const CategoriesPageContainer = styled.div`
   justify-content: space-between;
   margin: 0 6.5vw;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 4em;
 `;
 
-export const CategoryHeader = styled.div`
+export const CategoriesHeader = styled.div`
   height: 40vh;
   background: url(${Background});
   background-size: cover;
