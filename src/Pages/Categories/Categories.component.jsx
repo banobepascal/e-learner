@@ -4,7 +4,7 @@ import APP_DATA from "./Categories.data";
 import Category from "../../components/Category/Category.component";
 import { CategoriesPageContainer, CategoriesHeader } from "./Categories.styles";
 
-class Categories extends Component {
+class CategoriesPage extends Component {
   state = {
     categories: APP_DATA,
   };
@@ -28,4 +28,4 @@ class Categories extends Component {
   }
 }
 
-export default Categories;
+export default CategoriesPage;
