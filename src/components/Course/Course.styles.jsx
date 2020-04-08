@@ -34,9 +34,11 @@ export const StudentsAndRatings = styled(Card.Body)`
   padding: 0;
 
   i {
-    color: #f7631b;
+    color: orange;
     span {
       font-family: "Poppins", sans-serif;
+      color: #000;
+      font-weight: normal;
     }
   }
 
