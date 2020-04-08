@@ -6,6 +6,10 @@ export const CategoryContainer = styled.div`
    width: 26.5vw;
 `;
 
+export const CategoryImg = styled(Card.Img)`
+   height: 200px;
+`;
+
 export const CategoryTitle = styled(Card.Title)`
    &:hover {
       color: #fc3c64;
