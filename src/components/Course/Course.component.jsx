@@ -27,7 +27,7 @@ const Course = ({
         <p>{category}</p>
         <StudentsAndRatings>
           <p>
-            {numberOfStudents} <span>students</span>{" "}
+            {numberOfStudents} <span>students</span>
           </p>
           <i className="fa fa-star" aria-hidden="true">
             {" "}
