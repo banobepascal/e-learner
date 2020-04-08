@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import APP_DATA from "./Categories.data";
+import APP_DATA from "../../App.data";
 import Category from "../../components/Category/Category.component";
 import { CategoriesPageContainer, CategoriesHeader } from "./Categories.styles";
 

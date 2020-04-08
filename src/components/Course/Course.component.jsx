@@ -1,52 +1,46 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+
 import {
-  CourseContainer,
   CourseImage,
+  Enroll,
   CourseDetails,
-  CourseTitle,
   StudentsAndRatings,
   Line,
   AuthorContainer,
-  AuthorImg,
-  AuthorName,
 } from "./Course.styles";
 
 const Course = ({
   courseImageUrl,
   title,
-  description,
+  category,
   numberOfStudents,
   authorImageUrl,
   authorName,
-  ratings
+  ratings,
 }) => {
   return (
-    <CourseContainer>
     <Card>
-      <CourseImage variant="top" src={courseImageUrl} />
+      <CourseImage src={courseImageUrl} />
       <CourseDetails>
-        <CourseTitle>{title}</CourseTitle>
-        <Card.Text>{description}</Card.Text>
+        <h1>{title}</h1>
+        <p>{category}</p>
         <StudentsAndRatings>
-          <Card.Text style={{ color: "#fc3c64" }}>
+          <p>
             {numberOfStudents} <span>students</span>{" "}
-          </Card.Text>
-          <Card.Text>
-            <i className="fa fa-star" aria-hidden="true">
-              {" "}
-              <span>{ratings}</span>
-            </i>
-          </Card.Text>
+          </p>
+          <i className="fa fa-star" aria-hidden="true">
+            {" "}
+            <span>{ratings}</span>
+          </i>
         </StudentsAndRatings>
       </CourseDetails>
       <Line />
       <AuthorContainer>
-        <AuthorImg src={authorImageUrl} />
-        <AuthorName>{authorName}</AuthorName>
+        <img src={authorImageUrl} alt="" />
+        <p>{authorName}</p>
       </AuthorContainer>
     </Card>
-    </CourseContainer>
   );
 };
 

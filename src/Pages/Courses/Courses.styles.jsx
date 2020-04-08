@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Background from "../../assets/bg.jpg";
 
 export const CoursesPageContainer = styled.div`
-  margin: 0 6.5vw 4em;
+  margin: 4em 6.5vw;
   font-family: "Poppins", sans-serif;
 `;
 
