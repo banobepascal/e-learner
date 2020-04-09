@@ -58,7 +58,7 @@ export const AuthButton = styled.div`
 `;
 
 export const FormContainer = styled.form`
-  width: 60%;
+  width: 50%;
   margin-bottom: 0;
 `;
 

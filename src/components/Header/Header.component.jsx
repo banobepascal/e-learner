@@ -38,6 +38,7 @@ const Header = () => {
             </InputField>
           </InnerForm>
         </FormContainer>
+        <OptionLinks to="/courses">Courses</OptionLinks>
         <OptionLinks to="/">About</OptionLinks>
         <AuthButton>
         <CustomButton>
