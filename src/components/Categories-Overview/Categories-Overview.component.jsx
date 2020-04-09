@@ -4,7 +4,7 @@ import { createStructuredSelector } from "reselect";
 
 import { selectCategoriesSections } from "../../redux/categories/categories.selectors";
 import Category from "../Category/Category.component";
-import { CategoriesPageContainer, CategoriesHeader } from "./Categories.styles";
+import { CategoriesPageContainer, CategoriesHeader } from "./Categories-Overview.styles";
 
 const CategoriesOverview = ({ categories }) => {
   return (

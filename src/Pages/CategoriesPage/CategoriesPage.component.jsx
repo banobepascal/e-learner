@@ -1,7 +1,7 @@
 import React from "react";
 import {Route} from "react-router-dom";
 
-import CategoriesOverview from "../../components/Categories/Categories.component";
+import CategoriesOverview from "../../components/Categories-Overview/Categories-Overview.component";
 import CoursesOverview from "../../components/Courses-Overview/Courses-Overview.component";
 
 const CategoriesPage = ({match}) => {
