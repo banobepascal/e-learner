@@ -8,9 +8,9 @@ import {
   CoursesPageContainer,
   CoursesHeader,
   CoursesContainer,
-} from "./Courses-Overview.styles";
+} from "./Courses-Page.styles";
 
-const CoursesOverview = ({ courses }) => {
+const CoursesPage = ({ courses }) => {
   return (
     <CoursesPageContainer>
       <CoursesHeader>
@@ -29,4 +29,4 @@ const mapStateToProps = createStructuredSelector({
   courses: selectCoursesSections,
 });
 
-export default connect(mapStateToProps)(CoursesOverview);
+export default connect(mapStateToProps)(CoursesPage);
