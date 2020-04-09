@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import { selectCategoriesSections } from "../../redux/categories/categories.selectors";
-import Category from "../../components/Category/Category.component";
+import Category from "../Category/Category.component";
 import { CategoriesPageContainer, CategoriesHeader } from "./Categories.styles";
 
 const CategoriesPage = ({ categories }) => {
