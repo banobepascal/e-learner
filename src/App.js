@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header.component";
 import Homepage from "./Pages/Homepage/Homepage.component";
 import CategoriesPage from "./Pages/Categories/Categories.component";
-import CoursesPage from "./Pages/Courses/Courses.component";
+import CoursesPage from "./components/Courses/Courses.component";
 import "./App.css";
 
 function App() {
