@@ -2,8 +2,14 @@ import styled from "styled-components";
 import Background from "../../assets/bg.jpg";
 
 export const CoursesPageContainer = styled.div`
-  margin: 4em 6.5vw;
   font-family: "Poppins", sans-serif;
+`;
+
+export const CoursesContainer = styled.div`
+ margin: 4em 6.5vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
 `;
 
 export const CoursesHeader = styled.div`

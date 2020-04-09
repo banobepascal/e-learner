@@ -6,7 +6,7 @@ import { selectCategoriesSections } from "../../redux/categories/categories.sele
 import Category from "../Category/Category.component";
 import { CategoriesPageContainer, CategoriesHeader } from "./Categories.styles";
 
-const CategoriesPage = ({ categories }) => {
+const CategoriesOverview = ({ categories }) => {
   return (
     <div>
       <CategoriesHeader>
@@ -25,4 +25,4 @@ const mapStateToProps = createStructuredSelector({
   categories: selectCategoriesSections,
 });
 
-export default connect(mapStateToProps)(CategoriesPage);
+export default connect(mapStateToProps)(CategoriesOverview);

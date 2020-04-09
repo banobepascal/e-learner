@@ -1,14 +1,14 @@
 import React from "react";
 import {Route} from "react-router-dom";
 
-import Categories from "../../components/Categories/Categories.component";
-import Courses from "../../components/Courses/Courses.component";
+import CategoriesOverview from "../../components/Categories/Categories.component";
+import CoursesOverview from "../../components/Courses-Overview/Courses-Overview.component";
 
 const CategoriesPage = ({match}) => {
   return (
     <div>
-    <Route exact path={`${match.path}`} component={Categories}/>
-    <Route path={`${match.path}/:categoryId`} component={Courses} />
+    <Route exact path={`${match.path}`} component={CategoriesOverview}/>
+    <Route path={`${match.path}/:categoryId`} component={CoursesOverview} />
     </div>
   );
 };

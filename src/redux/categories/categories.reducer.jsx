@@ -1,7 +1,7 @@
-import APP_DATA from "../App.data";
+import CATEGORIES_DATA from "./categories.data";
 
 const INITIAL_STATE = {
-  categories: APP_DATA
+  categories: CATEGORIES_DATA
 };
 
 const categoriesReducer = (state = INITIAL_STATE, action) => {
