@@ -8,7 +8,7 @@ const CategoriesPage = ({match}) => {
   return (
     <div>
     <Route exact path={`${match.path}`} component={CategoriesOverview}/>
-    <Route path={`${match.path}/:categoryId`} component={CoursesOverview} />
+    <Route path={`${match.path}/:category`} component={CoursesOverview} />
     </div>
   );
 };

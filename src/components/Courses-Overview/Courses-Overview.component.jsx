@@ -2,31 +2,32 @@ import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import { selectCoursesSections } from "../../redux/courses/courses.selectors";
 import Course from "../../components/Course/Course.component";
+import { selectCoursesCategories } from "../../redux/courses/courses.selectors";
+
 import {
-  CoursesPageContainer,
-  CoursesHeader,
   CoursesContainer,
+  CoursesHeader,
+  CoursesPageContainer,
 } from "./Courses-Overview.styles";
 
-const CoursesOverview = ({ courses }) => {
+const CoursesOverview = ({ courseCategories }) => {
   return (
     <CoursesPageContainer>
       <CoursesHeader>
         <h4>Courses</h4>
       </CoursesHeader>
       <CoursesContainer>
-        {courses.map(({ id, ...otherCollectionProps }) => (
-          <Course key={id} {...otherCollectionProps} />
+        {courseCategories.map(({ id, ...otherCourseProps }) => (
+          <Course key={id} {...otherCourseProps} />
         ))}
       </CoursesContainer>
     </CoursesPageContainer>
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  courses: selectCoursesSections,
-});
+const mapStateToProps = (state, ownProps) => ({
+  courseCategories: selectCoursesCategories(ownProps.match.params.category)(state)
+})
 
 export default connect(mapStateToProps)(CoursesOverview);

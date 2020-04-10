@@ -152,7 +152,7 @@ const COURSES_DATA = [
   {
     id: 111,
     title: "Learn Poetry",
-    category: "Marketing",
+    category: "Language & Speech",
     courseImageUrl: "https://i.ibb.co/K64nHgW/course-8.jpg",
     numberOfStudents: 20,
     authorImageUrl: "https://i.ibb.co/Vw7V2hz/2.jpg",
