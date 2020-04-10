@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Route} from 'react-router-dom';
 
 import APP_DATA from "../../App.data";
 import Category from "../../components/Category/Category.component";
@@ -10,9 +11,10 @@ class CategoriesPage extends Component {
   };
   render() {
     const { categories } = this.state;
-
+    const {match} = this.props;
     return (
       <div>
+      
         <CategoriesHeader>
           <h4>
              Categories

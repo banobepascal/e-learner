@@ -58,7 +58,7 @@ export const AuthButton = styled.div`
 `;
 
 export const FormContainer = styled.form`
-  width: 50%;
+  width: 60%;
   margin-bottom: 0;
 `;
 
@@ -86,7 +86,7 @@ export const InputField = styled.div`
     width: 100%;
     font-size: 16px;
     outline: none;
-    padding-left: 0.5em;
+    padding-left: 1em;
 
 
     &:placeholder {
