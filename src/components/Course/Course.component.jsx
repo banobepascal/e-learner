@@ -19,7 +19,7 @@ const Course = ({
   ratings,
 }) => {
   return (
-    <Card>
+    <Card style={{ marginTop: '2em'}}>
       <CourseImage src={courseImageUrl} />
       <CourseDetails>
         <h1>{title}</h1>

@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import { selectCoursesSections } from "../../redux/courses/courses.selectors";
-import Course from "../../components/Course/Course.component";
+import CoursePreview from "../../components/Course-Preview/Course-Preview.component";
 import {
   CoursesPageContainer,
   CoursesHeader,
@@ -18,7 +18,7 @@ const CoursesPage = ({ courses }) => {
       </CoursesHeader>
       <CoursesContainer>
         {courses.map(({ id, ...otherCollectionProps }) => (
-          <Course key={id} {...otherCollectionProps} />
+          <CoursePreview key={id} {...otherCollectionProps} />
         ))}
       </CoursesContainer>
     </CoursesPageContainer>
