@@ -3,7 +3,6 @@ import { Card } from "react-bootstrap";
 
 import {
   CourseImage,
-  Enroll,
   CourseDetails,
   StudentsAndRatings,
   Line,

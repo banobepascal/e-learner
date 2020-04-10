@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import CustomButton from "../Custom-Button/Custom-Button.component";
 
 export const HeaderContainer = styled.div`
   height: 12vh;
@@ -52,12 +53,14 @@ export const OptionLinks = styled(Link)`
   }
 `;
 
-export const AuthButton = styled.div`
+export const AuthButton = styled(CustomButton)`
+background: transparent;
   cursor: pointer;
   transition: all 0.2s ease-out, color 0.2s ease-out;
 `;
 
 export const FormContainer = styled.form`
+padding-left: 2em;
   width: 60%;
   margin-bottom: 0;
 `;

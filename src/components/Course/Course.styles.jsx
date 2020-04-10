@@ -54,6 +54,7 @@ export const Line = styled.hr`
 export const AuthorContainer = styled(Card.Body)`
   display: flex;
   padding: 0.5em 2em;
+  max-height: 4em;
 
   img {
     width: 44px;

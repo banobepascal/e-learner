@@ -1,16 +1,18 @@
 import styled from "styled-components";
 import Background from "../../assets/bg.jpg";
 
-export const CategoriesPageContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
-  margin: 0 6.5vw;
+export const CoursesPageContainer = styled.div`
   font-family: "Poppins", sans-serif;
-  margin-bottom: 4em;
 `;
 
-export const CategoriesHeader = styled.div`
+export const CoursesContainer = styled.div`
+  margin: 2em 6.5vw 4em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+`;
+
+export const CoursesHeader = styled.div`
   height: 40vh;
   background: url(${Background});
   background-size: cover;
@@ -18,11 +20,11 @@ export const CategoriesHeader = styled.div`
   background-repeat: no-repeat;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  
+
   h4 {
     padding-top: 10%;
     text-transform: uppercase;
     font-weight: bold;
-    color:  #fc3c64;
+    color: #fc3c64;
   }
 `;
