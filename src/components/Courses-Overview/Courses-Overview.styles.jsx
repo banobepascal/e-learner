@@ -6,7 +6,10 @@ export const CoursesPageContainer = styled.div`
 `;
 
 export const CoursesContainer = styled.div`
- margin: 0 6.5vw 4em;
+  margin: 2em 6.5vw 4em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
 `;
 
 export const CoursesHeader = styled.div`

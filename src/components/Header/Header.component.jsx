@@ -21,7 +21,6 @@ const Header = () => {
         <p>E Learner</p>
       </LogoContainer>
       <OptionsContainer>
-        <OptionLinks to="/categories">Categories</OptionLinks>
         <FormContainer>
           <InnerForm>
             <InputField>
@@ -40,11 +39,12 @@ const Header = () => {
         </FormContainer>
         <OptionLinks to="/courses">Courses</OptionLinks>
         <OptionLinks to="/">About</OptionLinks>
-        <AuthButton>
-        <CustomButton>
+        <CustomButton isLogin>
           Log In
         </CustomButton>
-       </AuthButton>
+        <CustomButton >
+         Sign Up
+        </CustomButton>
       </OptionsContainer>
     </HeaderContainer>
   );
