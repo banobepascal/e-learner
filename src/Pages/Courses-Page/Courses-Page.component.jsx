@@ -1,6 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
+import CourseDetails from "../../components/Course-Details/Course-Details.component";
 import CoursesOverview from "../../components/Courses-Overview/Courses-Overview.component";
 
 const CoursesPage = ({ match }) => {
