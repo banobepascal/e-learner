@@ -2,20 +2,20 @@ import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
+import HeaderImg from '../Header-Img/Header-Img.component';
 import { selectCoursesSections } from "../../redux/courses/courses.selectors";
 import Course from "../../components/Course/Course.component";
 import {
   CoursesPageContainer,
-  CoursesHeader,
   CoursesContainer,
 } from "./Courses-Overview.styles";
 
 const CoursesOverview = ({ courses }) => {
   return (
     <CoursesPageContainer>
-      <CoursesHeader>
+      <HeaderImg>
         <h4>Courses</h4>
-      </CoursesHeader>
+      </HeaderImg>
       <CoursesContainer>
         {courses.map(({ id, ...otherCourseProps }) => (
           <Course key={id} {...otherCourseProps} />
