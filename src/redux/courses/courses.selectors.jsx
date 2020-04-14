@@ -16,7 +16,7 @@ export const selectCoursesSections = createSelector(
   (courses) => courses.courses
 );
 
-export const selectCoursesCategories = (coursesUrlParam) =>
+export const selectCourse = (coursesUrlParam) =>
   createSelector([selectCoursesSections], (courses) =>
     courses.find((course) => course.id === COURSES_MAP_ID[coursesUrlParam])
   );

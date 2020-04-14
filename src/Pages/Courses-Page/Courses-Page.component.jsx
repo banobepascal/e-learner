@@ -9,6 +9,7 @@ const CoursesPage = ({ match }) => {
   return (
     <div>
       <Route exact path={`${match.path}`} component={CoursesOverview} />
+      <Route path={`${match.path}/course-details`} component={CourseDetails}/>
     </div>
   );
 };
