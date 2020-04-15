@@ -2,14 +2,7 @@ import { createSelector } from "reselect";
 
 const selectCourses = (state) => state.courses;
 
-const COURSES_MAP_ID = {
-  programming: 1,
-  graphicdesign: 2,
-  marketing: 3,
-  webdevelopment: 4,
-  languagespeech: 5,
-  business: 6,
-};
+const COURSES_MAP_ID = {};
 
 export const selectCoursesSections = createSelector(
   [selectCourses],
@@ -18,5 +11,5 @@ export const selectCoursesSections = createSelector(
 
 export const selectCourse = (coursesUrlParam) =>
   createSelector([selectCoursesSections], (courses) =>
-    courses.find((course) => course.id === COURSES_MAP_ID[coursesUrlParam])
+    courses.find((course) => course.id)
   );
