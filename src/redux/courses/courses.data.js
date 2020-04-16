@@ -129,7 +129,7 @@ const COURSES_DATA = [
     id: 110,
     title: "Network Marketing",
     category: "Marketing",
-    courseImageUrl: "https://i.ibb.co/VxHHB5Y/5.jpg",
+    courseImageUrl: "https://i.ibb.co/WFBWBhH/course-12.jpg",
     numberOfStudents: 20,
     authorImageUrl: "https://i.ibb.co/qkQCp5t/6.jpg",
     authorName: "Richard Hendricks",
