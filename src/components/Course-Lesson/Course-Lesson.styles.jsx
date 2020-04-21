@@ -1,15 +1,5 @@
 import styled from 'styled-components';
 
-export const CurriculumnContainer = styled.div`
-  color: #000;
-  margin-top: 2em;
-  font-family: "Poppins", sans-serif;
-
-  h5 {
-    font-weight: bold;
-  }
-`;
-
 export const CourseContent = styled.div`
   background: #fff;
   display: flex;
@@ -23,4 +13,3 @@ export const CourseContent = styled.div`
     padding-top: 10px;
   }
 `;
-

@@ -12,10 +12,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": {
-        "lesson01": "introduction to course",
-        "lesson02": "basic javascript functions"
-      },
+      "courseContent": [
+        {
+          "id": 1011,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1012,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
