@@ -33,6 +33,7 @@ export const HeaderTitle = styled.div`
   h2 {
     padding-top: 5%;
     color: #fff;
+    font-weight: bold;
   }
 
   p {

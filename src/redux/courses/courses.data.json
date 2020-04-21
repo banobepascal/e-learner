@@ -36,7 +36,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1021,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1022,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -51,7 +60,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1031,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1032,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -66,7 +84,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1041,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1042,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -81,7 +108,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1051,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1052,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -96,7 +132,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1061,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1062,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -111,7 +156,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1071,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1072,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -126,7 +180,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1081,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1082,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -141,7 +204,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1091,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1092,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -156,7 +228,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1101,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1102,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -171,7 +252,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1121,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1122,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -186,7 +276,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1131,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1132,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -201,7 +300,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1161,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1162,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -216,7 +324,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1151,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1152,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -231,7 +348,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1551,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1552,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -246,7 +372,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1111,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1112,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -261,7 +396,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 161,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 162,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     },
     {
@@ -276,7 +420,16 @@
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus consequatur et qui, dolor placeat est nisi mollitia vel alias expedita, itaque suscipit facilis aut magnam saepe non neque quas.",
       "eligibilty": "",
       "reviews": [],
-      "courseContent": [],
+      "courseContent": [
+        {
+          "id": 1141,
+          "lesson": "introduction to course"
+        },
+        {
+          "id": 1142,
+          "lesson": "basic javascript functions"
+        }
+      ],
       "ratings": 4.5
     }
   ]
