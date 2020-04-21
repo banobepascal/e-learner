@@ -1,26 +1,26 @@
-import React from 'react'
+import React from "react";
 
-import CustomButton from '../Custom-Button/Custom-Button.component';
-import {CurriculumnContainer, CourseContent, StatusButton} from './Course-Curriculumn.styles';
+import CustomButton from "../Custom-Button/Custom-Button.component";
+import {
+  CurriculumnContainer,
+  CourseContent,
+} from "./Course-Curriculumn.styles";
 
-const CourseCurriculumn = () => {
-    return ( 
-        <CurriculumnContainer>
-          <h4>Course Outline</h4>
-          <CourseContent>
-            <p>Introduction Lesson</p>
-            <StatusButton>
-              <CustomButton>Start</CustomButton>
-            </StatusButton>
-          </CourseContent>
-          <CourseContent>
-            <p>Basics of HTML</p>
-            <StatusButton>
-              <CustomButton>Start</CustomButton>
-            </StatusButton>
-          </CourseContent>
-        </CurriculumnContainer>
-     );
-}
- 
+const CourseCurriculumn = ({ courseContent }) => {
+  const { lesson01, lesson02 } = courseContent;
+  return (
+    <CurriculumnContainer>
+      <h5>Course Content</h5>
+      <CourseContent>
+        <p>{lesson01}</p>
+        <CustomButton>Start</CustomButton>
+      </CourseContent>
+      <CourseContent>
+        <p>{lesson02}</p>
+        <CustomButton>Start</CustomButton>
+      </CourseContent>
+    </CurriculumnContainer>
+  );
+};
+
 export default CourseCurriculumn;

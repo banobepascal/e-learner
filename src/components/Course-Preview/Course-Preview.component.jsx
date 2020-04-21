@@ -1,24 +1,21 @@
 import React from "react";
-import {connect} from 'react-redux';
+import { connect } from "react-redux";
 
-import Course from "../Course/Course.component";
-import {CoursePreviews} from './Course-Preview.styles';
-import {selectCourse} from '../../redux/courses/courses.selectors';
+import CourseDetails from "../Course-Details/Course-Details.component";
+import { CoursePreviews } from "./Course-Preview.styles";
+import { selectCourse } from "../../redux/courses/courses.selectors";
 
 const CoursePreview = ({ course }) => {
-  console.log(course)
+  console.log(course);
   return (
-    // <CoursePreviews>
-    //   {courses.map(({id, ...courseProps}) => (
-    //     <Course key={id} {...courseProps} />
-    //   ))}
-    // </CoursePreviews>
-    <div></div>
+    <div>
+      <CourseDetails key={course.id} course={course} />
+    </div>
   );
 };
 
 const mapStateToProps = (state, ownProps) => ({
-  course: selectCourse(ownProps.match.params.courseId)(state)
-})
+  course: selectCourse(ownProps.match.params.slug)(state),
+});
 
 export default connect(mapStateToProps)(CoursePreview);

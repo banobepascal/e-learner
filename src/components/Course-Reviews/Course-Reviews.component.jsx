@@ -1,12 +1,15 @@
 import React from "react";
 
 import {
+  ReviewContainer,
   ReviewsContent,
   ReviewTitleContainer,
   ReviewAuthorDetails,
 } from "./Course-Reviews.styles";
-const CourseReviews = () => {
+const CourseReviews = ({ reviews, ratings }) => {
   return (
+    <ReviewContainer>
+      <h5>Reviews</h5>
       <ReviewsContent>
         <ReviewTitleContainer>
           <ReviewAuthorDetails>
@@ -16,7 +19,7 @@ const CourseReviews = () => {
               <div>date</div>
             </div>
           </ReviewAuthorDetails>
-          <div>ratings</div>
+          <div>{ratings}</div>
         </ReviewTitleContainer>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -25,6 +28,7 @@ const CourseReviews = () => {
           dolorem quia at architecto?
         </p>
       </ReviewsContent>
+    </ReviewContainer>
   );
 };
 

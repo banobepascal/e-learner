@@ -4,25 +4,25 @@ import HeaderImg from "../Header-Img/Header-Img.component";
 import CourseDescription from "../Course-Description/Course-Description.component";
 import CourseCurriculumn from "../Course-Curriculumn/Course-Curriculumn.component";
 import CourseReviews from "../Course-Reviews/Course-Reviews.component";
-import {
-  CourseDetailsContainer,
-  CourseNavbar,
-  NavbarTabs,
-} from "./Course-Details.styles";
+import { CourseDetailsContainer } from "./Course-Details.styles";
 
-const CourseDetails = () => {
+const CourseDetails = ({ course }) => {
+  const { title, authorName, ratings, numberOfStudents } = course;
   return (
     <div>
-      <HeaderImg></HeaderImg>
-      <CourseNavbar>
-        <NavbarTabs>Description</NavbarTabs>
-        <NavbarTabs>Curriculumn</NavbarTabs>
-        <NavbarTabs>Reviews</NavbarTabs>
-      </CourseNavbar>
+      <HeaderImg isCourseDetails>
+        <h2>{title}</h2>
+        <p>
+          {ratings} <span>{numberOfStudents} students enrolled</span>
+        </p>
+        <p>
+          Created by <span> {authorName}</span>
+        </p>
+      </HeaderImg>
       <CourseDetailsContainer>
-        <CourseDescription />
-        <CourseCurriculumn />
-        <CourseReviews />
+        <CourseDescription {...course} />
+        <CourseCurriculumn {...course} />
+        <CourseReviews {...course} />
       </CourseDetailsContainer>
     </div>
   );
