@@ -1,8 +1,10 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import {Link} from 'react-router-dom';
 
 import {
   CourseImage,
+  CourseLink,
   CourseDetails,
   StudentsAndRatings,
   Line,
@@ -17,12 +19,15 @@ const Course = ({
   authorImageUrl,
   authorName,
   ratings,
+  slug
 }) => {
   return (
     <Card>
       <CourseImage src={courseImageUrl} />
       <CourseDetails>
+      <CourseLink to={`/courses/${slug}`}>
         <h1>{title}</h1>
+      </CourseLink>
         <p>{category}</p>
         <StudentsAndRatings>
           <p>
