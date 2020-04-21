@@ -3,7 +3,7 @@ import Background from "../../assets/bg.jpg";
 
 const courseDetails = css`
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(${Background});
+    url(${Background}) center center, cover;
 `;
 
 const getHeaderStyles = (props) => {
@@ -32,15 +32,19 @@ export const HeaderTitle = styled.div`
 
   h2 {
     padding-top: 5%;
-    color: #fff;
+    color: #fc3c64;
     font-weight: bold;
   }
 
   p {
-    color: #fff;
+    color: #000;
 
+    i {
+      color: orange;
+    }
     span {
       padding-left: 0.5em;
+      color: #000;
     }
   }
 `;

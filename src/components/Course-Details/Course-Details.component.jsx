@@ -13,10 +13,10 @@ const CourseDetails = ({ course }) => {
       <HeaderImg isCourseDetails>
         <h2>{title}</h2>
         <p>
-          {ratings} <span>{numberOfStudents} students enrolled</span>
+          Created by <span> {authorName}</span>
         </p>
         <p>
-          Created by <span> {authorName}</span>
+        <i className="fa fa-star" aria-hidden="true"></i> {ratings} <span>{numberOfStudents} students enrolled</span>
         </p>
       </HeaderImg>
       <CourseDetailsContainer>

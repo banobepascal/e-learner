@@ -19,7 +19,11 @@ const CourseReviews = ({ reviews, ratings }) => {
               <div>date</div>
             </div>
           </ReviewAuthorDetails>
-          <div>{ratings}</div>
+          <div>
+            {" "}
+            <i className="fa fa-star" aria-hidden="true"></i>
+            {ratings}
+          </div>
         </ReviewTitleContainer>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate

@@ -16,6 +16,11 @@ export const ReviewsContent = styled.div`
   padding: 10px 3vw;
   margin-top: 1em;
   background: #fff;
+
+  div i {
+    color: orange;
+    padding-right: 5px;
+  }
 `;
 
 export const ReviewTitleContainer = styled.div`
