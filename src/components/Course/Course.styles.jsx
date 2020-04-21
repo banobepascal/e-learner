@@ -1,27 +1,25 @@
 import styled from "styled-components";
 import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const CourseImage = styled(Card.Img)`
   height: 270px;
 `;
 
-export const Enroll = styled.div`
-  font-weight: 600;
-  display: inline-block;
-  margin: 14px;
+export const CourseLink = styled(Link)`
+  color: #000;
+
+  h1 {
+    font-size: 20px;
+  }
+  &:hover {
+    text-decoration: none;
+    color: #fc3c64;
+  }
 `;
 
 export const CourseDetails = styled(Card.Body)`
   padding: 25px 33px 25px;
-
-  h1 {
-    cursor: pointer;
-    font-size: 20px;
-
-    &:hover {
-      color: #fc3c64;
-    }
-  }
 
   p {
     color: #bbbbbb;
