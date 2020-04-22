@@ -9,6 +9,7 @@ const loginStyles = css`
     background: none;
     border: 1px solid #000;
     color: #000;
+    text-decoration: none;
   }
 `;
 
@@ -28,9 +29,29 @@ const signUpStyles = css`
   }
 `;
 
+const cardButtonStyles = css`
+  border-radius: 4px;
+  background: #fc3c64;
+  border: 1px solid #fc3c64;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+    outline: none;
+    background: #e44f6e;
+  }
+`;
+
 const getButtonStyles = (props) => {
   if (props.isLogin) {
     return loginStyles;
+  }
+
+  if (props.isCardButton) {
+    return cardButtonStyles;
   }
 
   return signUpStyles;
