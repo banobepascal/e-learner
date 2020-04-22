@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import CustomButton from "../Custom-Button/Custom-Button.component";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
@@ -7,10 +8,9 @@ import {
   LogoContainer,
   OptionsContainer,
   OptionLinks,
-  AuthButton,
   FormContainer,
   InnerForm,
-  InputField
+  InputField,
 } from "./Header.styles";
 
 const Header = () => {
@@ -39,12 +39,10 @@ const Header = () => {
         </FormContainer>
         <OptionLinks to="/courses">Courses</OptionLinks>
         <OptionLinks to="/">About</OptionLinks>
-        <CustomButton isLogin>
-          Log In
-        </CustomButton>
-        <CustomButton >
-         Sign Up
-        </CustomButton>
+        <Link to="/signin">
+          <CustomButton isLogin>Log In</CustomButton>
+        </Link>
+        <CustomButton>Sign Up</CustomButton>
       </OptionsContainer>
     </HeaderContainer>
   );
