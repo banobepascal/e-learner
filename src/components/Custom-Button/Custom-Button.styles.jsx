@@ -65,6 +65,7 @@ export const CustomButtonContainer = styled.div`
   transition: all 0.2s ease-out, color 0.2s ease-out;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  border-radius: 2px;
 
   ${getButtonStyles}
 `;
