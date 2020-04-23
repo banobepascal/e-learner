@@ -3,14 +3,9 @@ import BackgroundImage from "../../assets/bg2.jpg";
 
 export const HomepageContainer = styled.div`
   width: 100%;
-  height: 88vh;
+  height: 90vh;
   font-family: "Poppins", sans-serif;
-`;
-
-export const MainSection = styled.div`
-  width: 100%;
-  height: 100%;
-  align-items: center;
+  display: flex;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5),
@@ -20,7 +15,13 @@ export const MainSection = styled.div`
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 0 4em;
+  justify-content: space-between;
+`;
+
+export const MainSection = styled.div`
   text-align: center;
+  margin-top: 10%;
 
   h1 {
     font-weight: 700;
@@ -35,7 +36,7 @@ export const MainSection = styled.div`
 
 export const StartedButton = styled.div`
   width: 160px;
-  margin: 5% auto;
+  ${'' /* margin: 5% auto; */}
 
   &:hover {
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);

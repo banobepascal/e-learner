@@ -22,6 +22,21 @@ const signUpStyles = css`
   &:visited,
   &:link,
   &:active {
+    outline: none;
+    background: #e44f6e;
+  }
+`;
+
+const cardButtonStyles = css`
+  border-radius: 4px;
+  background: #fc3c64;
+  border: 1px solid #fc3c64;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
     text-decoration: none;
     outline: none;
     background: #e44f6e;
@@ -31,6 +46,10 @@ const signUpStyles = css`
 const getButtonStyles = (props) => {
   if (props.isLogin) {
     return loginStyles;
+  }
+
+  if (props.isCardButton) {
+    return cardButtonStyles;
   }
 
   return signUpStyles;
@@ -43,7 +62,9 @@ export const CustomButtonContainer = styled.div`
   cursor: pointer;
   transition: all 0.2s ease-out, color 0.2s ease-out;
   text-align: center;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
+  border-radius: 2px;
 
   ${getButtonStyles}
 `;
