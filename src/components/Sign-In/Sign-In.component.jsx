@@ -30,7 +30,7 @@ const SignIn = () => {
               <i class="fab fa-linkedin-in"></i>
             </Button>
           </AuthButtonsContainer>
-          <p>Or</p>
+          <h6><span>Or</span></h6>
           <Form>
             <FormInput>
               <i className="fa fa-envelope" aria-hidden="true"></i>

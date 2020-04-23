@@ -39,7 +39,7 @@ const Header = () => {
         </FormContainer>
         <OptionLinks to="/courses">Courses</OptionLinks>
         <OptionLinks to="/">About</OptionLinks>
-        <Link to="/">
+        <Link to="/sign_in">
           <CustomButton isLogin>Log In</CustomButton>
         </Link>
         <Link to="/sign_up">

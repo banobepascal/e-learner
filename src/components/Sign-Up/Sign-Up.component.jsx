@@ -48,7 +48,7 @@ const SignUp = () => {
           <p>
             Already have an account?{" "}
             <span>
-              <Link to="/">Sign in</Link>
+              <Link to="/sign_in">Sign in</Link>
             </span>
           </p>
         </SignUpCardBody>
