@@ -30,10 +30,10 @@ export const SignUpCardBody = styled(Card.Body)`
 
   p {
     padding-top: 1.5em;
-    color: #7c7c7c;
     font-size: 0.9em;
+    color: #7c7c7c;
 
-   span Link {
+    a {
       color: #7c7c7c;
 
       &:hover {
@@ -41,5 +41,18 @@ export const SignUpCardBody = styled(Card.Body)`
       }
     }
   }
-`;
 
+  h6 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 0.1em;
+    margin: 1.5em 0;
+
+    span {
+      color: #7c7c7c;
+      padding: 0 10px;
+      background: #fff;
+    }
+  }
+`;

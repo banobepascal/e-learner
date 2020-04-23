@@ -11,6 +11,7 @@ import {
   FormContainer,
   InnerForm,
   InputField,
+  AuthLinks,
 } from "./Header.styles";
 
 const Header = () => {
@@ -39,11 +40,11 @@ const Header = () => {
         </FormContainer>
         <OptionLinks to="/courses">Courses</OptionLinks>
         <OptionLinks to="/">About</OptionLinks>
-        <Link to="/sign_in">
+        <Link to="/sign_in" style={{ textDecoration: "none" }}>
           <CustomButton isLogin>Log In</CustomButton>
         </Link>
-        <Link to="/sign_up">
-        <CustomButton>Sign Up</CustomButton>
+        <Link to="/sign_up" style={{ textDecoration: "none" }}>
+          <CustomButton>Sign Up</CustomButton>
         </Link>
       </OptionsContainer>
     </HeaderContainer>

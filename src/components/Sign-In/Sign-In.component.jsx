@@ -45,7 +45,7 @@ const SignIn = () => {
           <p>
             Dont have an acount?{" "}
             <span>
-              <Link to="/sign_up">Sign Up</Link>
+              <Link to="/sign_up" style={{ textDecoration: 'none' }}>Sign Up</Link>
             </span>
           </p>
         </SignInCardBody>

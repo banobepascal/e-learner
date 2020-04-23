@@ -20,16 +20,16 @@ const SignUp = () => {
           <p>Sign up instantly</p>
           <AuthButtonsContainer>
             <Button type="submit">
-              <i class="fab fa-google"></i>
+              <i className="fab fa-google"></i>
             </Button>
             <Button type="submit" variant="dark">
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </Button>
             <Button type="submit" variant="info">
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-linkedin-in"></i>
             </Button>
           </AuthButtonsContainer>
-          <p>Or</p>
+          <h6><span>Or</span></h6>
           <Form>
             <FormInput>
               <i className="fa fa-envelope" aria-hidden="true"></i>
@@ -48,7 +48,7 @@ const SignUp = () => {
           <p>
             Already have an account?{" "}
             <span>
-              <Link to="/sign_in">Sign in</Link>
+              <Link to="/sign_in" style={{ textDecoration: 'none' }}>Sign in</Link>
             </span>
           </p>
         </SignUpCardBody>

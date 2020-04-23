@@ -9,7 +9,6 @@ const loginStyles = css`
     background: none;
     border: 1px solid #000;
     color: #000;
-    text-decoration: none;
   }
 `;
 
@@ -23,7 +22,6 @@ const signUpStyles = css`
   &:visited,
   &:link,
   &:active {
-    text-decoration: none;
     outline: none;
     background: #e44f6e;
   }
@@ -64,6 +62,7 @@ export const CustomButtonContainer = styled.div`
   cursor: pointer;
   transition: all 0.2s ease-out, color 0.2s ease-out;
   text-align: center;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
   border-radius: 2px;
 

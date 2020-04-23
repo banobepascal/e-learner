@@ -53,6 +53,10 @@ export const OptionLinks = styled(Link)`
   }
 `;
 
+export const AuthLinks = styled(Link)`
+  text-decoration: none;
+`;
+
 export const AuthButton = styled(CustomButton)`
 background: transparent;
   cursor: pointer;
