@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CustomButton from "../Custom-Button/Custom-Button.component";
 
 export const HeaderContainer = styled.div`
-  height: 12vh;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -18,7 +18,7 @@ export const HeaderContainer = styled.div`
 export const LogoContainer = styled(Link)`
   width: 20%;
   display: flex;
-  padding: 15px 0;
+  padding: 8px 0;
 
   p {
     font-family: "Fredoka One", cursive;

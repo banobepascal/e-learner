@@ -39,10 +39,12 @@ const Header = () => {
         </FormContainer>
         <OptionLinks to="/courses">Courses</OptionLinks>
         <OptionLinks to="/">About</OptionLinks>
-        <Link to="/sign_in">
+        <Link to="/">
           <CustomButton isLogin>Log In</CustomButton>
         </Link>
+        <Link to="/sign_up">
         <CustomButton>Sign Up</CustomButton>
+        </Link>
       </OptionsContainer>
     </HeaderContainer>
   );
