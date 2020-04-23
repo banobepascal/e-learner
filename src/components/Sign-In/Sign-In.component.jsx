@@ -3,13 +3,13 @@ import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import CustomButton from "../Custom-Button/Custom-Button.component";
+import FormInput from "../Form-Input/Form-Input.component";
 
 import {
   AuthButtonsContainer,
   SignInContainer,
   SignInCard,
   SignInCardBody,
-  FormInput,
 } from "./Sign-In.styles";
 
 const SignIn = () => {
@@ -23,11 +23,11 @@ const SignIn = () => {
             <Button type="submit">
               <i class="fab fa-google"></i>
             </Button>
-            <Button type="submit">
+            <Button type="submit" variant="dark">
               <i class="fab fa-github"></i>
             </Button>
-            <Button type="submit">
-              <i class="fa fa-linkedin"></i>
+            <Button type="submit" variant="info">
+              <i class="fab fa-linkedin-in"></i>
             </Button>
           </AuthButtonsContainer>
           <p>Or</p>

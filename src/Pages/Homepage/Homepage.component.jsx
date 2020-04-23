@@ -1,5 +1,6 @@
 import React from "react";
 
+import SignIn from '../../components/Sign-In/Sign-In.component';
 import CustomButton from "../../components/Custom-Button/Custom-Button.component";
 import {
   HomepageContainer,
@@ -16,6 +17,7 @@ const Homepage = () => {
           <CustomButton>Get Started</CustomButton>
         </StartedButton>
       </MainSection>
+      <SignIn/>
     </HomepageContainer>
   );
 };
