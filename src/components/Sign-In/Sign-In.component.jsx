@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import CustomButton from "../Custom-Button/Custom-Button.component";
 import FormInput from "../Form-Input/Form-Input.component";
 
+import {signInWithGoogle} from '../../firebase/firebase.utils';
 import {
   AuthButtonsContainer,
   SignInContainer,
@@ -20,7 +21,7 @@ const SignIn = () => {
           <h3>Welcome back!</h3>
           <p>Login to your account</p>
           <AuthButtonsContainer>
-            <Button type="submit">
+            <Button onClick={signInWithGoogle}>
               <i class="fab fa-google"></i>
             </Button>
             <Button type="submit" variant="dark">
