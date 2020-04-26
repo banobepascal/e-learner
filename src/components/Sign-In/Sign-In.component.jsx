@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 import CustomButton from "../Custom-Button/Custom-Button.component";
 import FormInput from "../Form-Input/Form-Input.component";
 
-import {signInWithGoogle} from '../../firebase/firebase.utils';
+import {
+  signInWithGoogle,
+  signInWithGithub,
+} from "../../firebase/firebase.utils";
 import {
   AuthButtonsContainer,
   SignInContainer,
@@ -22,16 +25,18 @@ const SignIn = () => {
           <p>Login to your account</p>
           <AuthButtonsContainer>
             <Button onClick={signInWithGoogle}>
-              <i class="fab fa-google"></i>
+              <i className="fab fa-google"></i>
             </Button>
-            <Button type="submit" variant="dark">
-              <i class="fab fa-github"></i>
+            <Button variant="dark" onClick={signInWithGithub}>
+              <i className="fab fa-github"></i>
             </Button>
             <Button type="submit" variant="info">
-              <i class="fab fa-linkedin-in"></i>
+              <i className="fab fa-twitter"></i>
             </Button>
           </AuthButtonsContainer>
-          <h6><span>Or</span></h6>
+          <h6>
+            <span>Or</span>
+          </h6>
           <Form>
             <FormInput>
               <i className="fa fa-envelope" aria-hidden="true"></i>
@@ -46,7 +51,9 @@ const SignIn = () => {
           <p>
             Dont have an acount?{" "}
             <span>
-              <Link to="/sign_up" style={{ textDecoration: 'none' }}>Sign Up</Link>
+              <Link to="/sign_up" style={{ textDecoration: "none" }}>
+                Sign Up
+              </Link>
             </span>
           </p>
         </SignInCardBody>
