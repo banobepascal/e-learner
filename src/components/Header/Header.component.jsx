@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import CustomButton from "../Custom-Button/Custom-Button.component";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
+
+import { auth } from "../../firebase/firebase.utils";
 import {
   HeaderContainer,
   LogoContainer,
@@ -14,7 +16,7 @@ import {
   AuthLinks,
 } from "./Header.styles";
 
-const Header = () => {
+const Header = ({ currentUser }) => {
   return (
     <HeaderContainer>
       <LogoContainer to="/">
@@ -40,12 +42,13 @@ const Header = () => {
         </FormContainer>
         <OptionLinks to="/courses">Courses</OptionLinks>
         <OptionLinks to="/">About</OptionLinks>
-        <Link to="/sign_in" style={{ textDecoration: "none" }}>
-          <CustomButton isLogin>Log In</CustomButton>
-        </Link>
-        <Link to="/sign_up" style={{ textDecoration: "none" }}>
-          <CustomButton>Sign Up</CustomButton>
-        </Link>
+        {currentUser ? (
+          <CustomButton onClick={() => auth.signOut()}>Sign Out</CustomButton>
+        ) : (
+            <Link to="/sign_in" style={{ textDecoration: "none" }}>
+              <CustomButton>Log In</CustomButton>
+            </Link>
+        )}
       </OptionsContainer>
     </HeaderContainer>
   );
