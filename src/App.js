@@ -7,7 +7,7 @@ import SignIn from "./components/Sign-In/Sign-In.component";
 import SignUp from "./components/Sign-Up/Sign-Up.component";
 import CoursesPage from "./Pages/Courses-Page/Courses-Page.component";
 
-import {auth} from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
 import "./App.css";
 
@@ -19,10 +19,9 @@ class App extends Component {
   unsubscribefromAuth = null;
 
   componentDidMount() {
-    this.unsubscribefromAuth = auth.onAuthStateChanged(user => {
-      this.setState({ currentUser: user});
-      console.log(user);
-    })
+    this.unsubscribefromAuth = auth.onAuthStateChanged((user) => {
+      createUserProfileDocument(user);
+    });
   }
 
   componentWillUnmount() {
@@ -32,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header currentUser={this.state.currentUser}/>
+        <Header currentUser={this.state.currentUser} />
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="/courses" component={CoursesPage} />
