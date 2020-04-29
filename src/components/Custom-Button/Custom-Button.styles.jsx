@@ -31,6 +31,7 @@ const cardButtonStyles = css`
   border-radius: 4px;
   background: #fc3c64;
   border: 1px solid #fc3c64;
+  width: 100%;
 
   &:focus,
   &:hover,
@@ -55,7 +56,7 @@ const getButtonStyles = (props) => {
   return signUpStyles;
 };
 
-export const CustomButtonContainer = styled.div`
+export const CustomButtonContainer = styled.button`
   font-size: 1em;
   padding: 11px 25px;
   color: #fff;

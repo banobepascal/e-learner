@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 
 import FormInput from "../Form-Input/Form-Input.component";
 import CustomButton from "../Custom-Button/Custom-Button.component";
@@ -17,8 +17,8 @@ class SignUp extends Component {
     confirmPassword: "",
   };
 
-  handleSubmit = async (e) => {
-    e.preventDefault();
+  handleSubmit = async (event) => {
+    event.preventDefault();
 
     const { email, password, confirmPassword } = this.state;
 
@@ -44,8 +44,8 @@ class SignUp extends Component {
     }
   };
 
-  handleChange = (e) => {
-    const { name, value } = e.target;
+  handleChange = (event) => {
+    const { name, value } = event.target;
 
     this.setState({ [name]: value });
   };

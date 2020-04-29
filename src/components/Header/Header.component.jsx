@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 import CustomButton from "../Custom-Button/Custom-Button.component";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
@@ -44,13 +45,17 @@ const Header = ({ currentUser }) => {
         {currentUser ? (
           <CustomButton onClick={() => auth.signOut()}>Sign Out</CustomButton>
         ) : (
-            <Link to="/sign_in" style={{ textDecoration: "none" }}>
-              <CustomButton>Log In</CustomButton>
-            </Link>
+          <Link to="/sign_in" style={{ textDecoration: "none" }}>
+            <CustomButton>Log In</CustomButton>
+          </Link>
         )}
       </OptionsContainer>
     </HeaderContainer>
   );
 };
 
-export default Header;
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+
+export default connect(mapStateToProps)(Header);
