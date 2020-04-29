@@ -1,20 +1,12 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import CustomButton from "../Custom-Button/Custom-Button.component";
 import FormInput from "../Form-Input/Form-Input.component";
+import AuthButtons from "../Auth-Buttons/Auth-Buttons.component";
 
-import {
-  signInWithGoogle,
-  signInWithGithub,
-} from "../../firebase/firebase.utils";
-import {
-  AuthButtonsContainer,
-  SignInContainer,
-  SignInCard,
-  SignInCardBody,
-} from "./Sign-In.styles";
+import { SignInContainer, SignInCard, SignInCardBody } from "./Sign-In.styles";
 
 const SignIn = () => {
   return (
@@ -23,17 +15,7 @@ const SignIn = () => {
         <SignInCardBody>
           <h3>Welcome back!</h3>
           <p>Login to your account</p>
-          <AuthButtonsContainer>
-            <Button onClick={signInWithGoogle}>
-              <i className="fab fa-google"></i>
-            </Button>
-            <Button variant="dark" onClick={signInWithGithub}>
-              <i className="fab fa-github"></i>
-            </Button>
-            <Button type="submit" variant="info">
-              <i className="fab fa-twitter"></i>
-            </Button>
-          </AuthButtonsContainer>
+          <AuthButtons />
           <h6>
             <span>Or</span>
           </h6>
