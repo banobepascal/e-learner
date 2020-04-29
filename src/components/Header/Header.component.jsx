@@ -13,7 +13,6 @@ import {
   FormContainer,
   InnerForm,
   InputField,
-  AuthLinks,
 } from "./Header.styles";
 
 const Header = ({ currentUser }) => {
