@@ -70,7 +70,7 @@ export const AuthButton = styled(CustomButton)`
 
 export const FormContainer = styled.form`
   padding-left: 2em;
-  width: 70%;
+  width: 60%;
   margin-bottom: 0;
 `;
 

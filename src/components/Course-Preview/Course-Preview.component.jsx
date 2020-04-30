@@ -5,7 +5,6 @@ import CourseDetails from "../Course-Details/Course-Details.component";
 import { selectCourse } from "../../redux/courses/courses.selectors";
 
 const CoursePreview = ({ course }) => {
-  console.log(course);
   return (
     <div>
       <CourseDetails key={course.id} course={course} />
