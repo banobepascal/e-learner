@@ -7,6 +7,7 @@ import Homepage from "./Pages/Homepage/Homepage.component";
 import SignIn from "./components/Sign-In/Sign-In.component";
 import SignUp from "./components/Sign-Up/Sign-Up.component";
 import CoursesPage from "./Pages/Courses-Page/Courses-Page.component";
+import MyCourses from './Pages/My-Courses/My-Courses.component';
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -48,6 +49,7 @@ class App extends Component {
           <Route path="/courses" component={CoursesPage} />
           <Route path="/sign_in" component={SignIn} />
           <Route exact path="/sign_up" component={SignUp} />
+          <Route path="/my_courses" component={MyCourses} />
         </Switch>
       </div>
     );

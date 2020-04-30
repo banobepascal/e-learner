@@ -44,7 +44,7 @@ const Header = ({ currentUser }) => {
         <OptionLinks to="/">About</OptionLinks>
         {currentUser ? (
           <div style={{display: 'flex'}}>
-          <OptionLinks to="/">My courses</OptionLinks>
+          <OptionLinks to="/my_courses">My courses</OptionLinks>
           <CustomButton onClick={() => auth.signOut()}>Sign Out</CustomButton>
           </div>
         ) : (
