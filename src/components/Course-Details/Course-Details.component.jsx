@@ -24,7 +24,7 @@ const CourseDetails = ({ course, enroll, enrollInCourse }) => {
           <i className="fa fa-star" aria-hidden="true"></i> {ratings}{" "}
           <span>{numberOfStudents} students enrolled</span>
         </p>
-        {enroll === true ? (
+        {enroll ? (
           <CustomButton onClick={() => enrollInCourse(course)}>
             Enroll
           </CustomButton>
