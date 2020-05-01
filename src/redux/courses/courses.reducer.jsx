@@ -3,6 +3,7 @@ import CourseActionTypes from "./courses.types";
 
 const INITIAL_STATE = {
   courses: COURSES_DATA.data,
+  enroll: false,
   myCourses: [],
 };
 
@@ -11,6 +12,7 @@ const coursesReducer = (state = INITIAL_STATE, action) => {
     case CourseActionTypes.ENROLL_COURSE:
       return {
         ...state,
+        enroll: !state.enroll,
         myCourses: [...state.myCourses, action.payload],
       };
     default:

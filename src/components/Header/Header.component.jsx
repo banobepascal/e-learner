@@ -20,7 +20,6 @@ const Header = ({ currentUser }) => {
   return (
     <HeaderContainer>
       <LogoContainer to="/">
-        <Logo className="logo" style={{ width: "70px", height: "50px" }} />
         <p>E Learner</p>
       </LogoContainer>
       <OptionsContainer>

@@ -11,7 +11,7 @@ import { enrollInCourse } from "../../redux/courses/courses.actions";
 
 import { CourseDetailsContainer } from "./Course-Details.styles";
 
-const CourseDetails = ({ course, currentUser, enrollInCourse }) => {
+const CourseDetails = ({ course, enroll, enrollInCourse }) => {
   const { title, authorName, ratings, numberOfStudents } = course;
   return (
     <div>
@@ -24,12 +24,14 @@ const CourseDetails = ({ course, currentUser, enrollInCourse }) => {
           <i className="fa fa-star" aria-hidden="true"></i> {ratings}{" "}
           <span>{numberOfStudents} students enrolled</span>
         </p>
-        {currentUser ? (
+        {enroll === true ? (
           <CustomButton onClick={() => enrollInCourse(course)}>
             Enroll
           </CustomButton>
-        ) : (
-          <p>Log in to enroll in course</p>
+        ) : ( 
+          <CustomButton onClick={() => enrollInCourse(course)}>
+            Quit course
+          </CustomButton>
         )}
       </HeaderImg>
       <CourseDetailsContainer>
@@ -42,7 +44,7 @@ const CourseDetails = ({ course, currentUser, enrollInCourse }) => {
 };
 
 const mapStateToProps = (state) => ({
-  currentUser: state.user.currentUser,
+  enroll: state.enroll,
 });
 
 const mapDispatchToProps = (dispatch) => ({

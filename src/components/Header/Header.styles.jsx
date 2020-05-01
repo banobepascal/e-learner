@@ -17,14 +17,12 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled(Link)`
   width: 20%;
-  display: flex;
-  padding: 8px 0;
+  margin: 1em 0;
 
   p {
     font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     color: #fc3c64;
-    padding: 8px 2px 0 0;
     font-size: 1.5em;
   }
 
