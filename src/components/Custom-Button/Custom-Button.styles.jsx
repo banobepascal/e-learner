@@ -5,10 +5,15 @@ const loginStyles = css`
   border: 2px solid #fc3c64;
   color: rgb(95, 93, 93);
 
-  &:hover {
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
     background: none;
     border: 2.5px solid #fc3c64;
     color: #000;
+    outline: none;
   }
 `;
 
