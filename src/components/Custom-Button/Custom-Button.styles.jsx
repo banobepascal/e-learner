@@ -2,12 +2,12 @@ import styled, { css } from "styled-components";
 
 const loginStyles = css`
   background: transparent;
-  border: 1px solid rgb(95, 93, 93);
+  border: 2px solid #fc3c64;
   color: rgb(95, 93, 93);
 
   &:hover {
     background: none;
-    border: 1px solid #000;
+    border: 2.5px solid #fc3c64;
     color: #000;
   }
 `;
