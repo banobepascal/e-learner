@@ -7,12 +7,14 @@ import CourseDescription from "../Course-Description/Course-Description.componen
 import CourseCurriculumn from "../Course-Curriculumn/Course-Curriculumn.component";
 import CourseReviews from "../Course-Reviews/Course-Reviews.component";
 
-import { enrollInCourse, quitCourse } from "../../redux/courses/courses.actions";
+import {
+  enrollInCourse,
+} from "../../redux/courses/courses.actions";
 
-import { CourseDetailsContainer, EnrollAndQuit } from "./Course-Details.styles";
+import { CourseDetailsContainer } from "./Course-Details.styles";
 
 const CourseDetails = ({ course, currentUser, enrollInCourse, quitCourse }) => {
-  const { title, authorName, ratings, numberOfStudents } = course;
+  const { title, authorName, ratings, numberOfStudents, enroll } = course;
   return (
     <div>
       <HeaderImg isCourseDetails>
@@ -25,14 +27,9 @@ const CourseDetails = ({ course, currentUser, enrollInCourse, quitCourse }) => {
           <span>{numberOfStudents} students enrolled</span>
         </p>
         {currentUser ? (
-          <EnrollAndQuit>
-            <CustomButton onClick={() => enrollInCourse(course)}>
-              Enroll
-            </CustomButton>
-            <CustomButton onClick={() => quitCourse(course)} isLogin>
-              Quit course
-            </CustomButton>
-          </EnrollAndQuit>
+          <CustomButton onClick={() => enrollInCourse(course)}>
+            {enroll ? "Enroll" : "Enrolled"}
+          </CustomButton>
         ) : (
           <p>Log in to enroll in course</p>
         )}
@@ -52,7 +49,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   enrollInCourse: (course) => dispatch(enrollInCourse(course)),
-  quitCourse: (course) => dispatch(quitCourse(course)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CourseDetails);

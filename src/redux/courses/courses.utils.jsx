@@ -9,15 +9,3 @@ export const enrollCourse = (myCourses, courseToAdd) => {
 
   return [...myCourses, { ...courseToAdd }];
 };
-
-export const quitFromCourse = (myCourses, courseToQuit) => {
-  const existingCourse = myCourses.find(
-    (course) => course.id === courseToQuit.id
-  );
-
-  if (existingCourse) {
-    return myCourses.filter((course) => course.id !== courseToQuit.id);
-  }
-
-  return [...myCourses, {...courseToQuit}]
-};
