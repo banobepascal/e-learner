@@ -16,7 +16,6 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  width: 20%;
   margin: 1em 0;
 
   p {
@@ -32,7 +31,7 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const OptionsContainer = styled.div`
-  width: 100%;
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,12 +50,12 @@ export const OptionLinks = styled(Link)`
   }
 `;
 
-export const AuthLinks = styled.div`
+export const BeforeAfter = styled.div`
   display: flex;
   justify-content: space-between;
 
-  Link {
-    padding-left: 1em;
+  button {
+    margin-left: 2.5em;
   }
 `;
 
@@ -67,7 +66,6 @@ export const AuthButton = styled(CustomButton)`
 `;
 
 export const FormContainer = styled.form`
-  padding-left: 2em;
   width: 60%;
   margin-bottom: 0;
 `;

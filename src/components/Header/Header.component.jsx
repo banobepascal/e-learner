@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import CustomButton from "../Custom-Button/Custom-Button.component";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 import { auth } from "../../firebase/firebase.utils";
 import {
@@ -14,6 +13,7 @@ import {
   FormContainer,
   InnerForm,
   InputField,
+  BeforeAfter
 } from "./Header.styles";
 
 const Header = ({ currentUser }) => {
@@ -23,6 +23,7 @@ const Header = ({ currentUser }) => {
         <p>E Learner</p>
       </LogoContainer>
       <OptionsContainer>
+        <OptionLinks to="/courses">Courses</OptionLinks>
         <FormContainer>
           <InnerForm>
             <InputField>
@@ -32,24 +33,25 @@ const Header = ({ currentUser }) => {
                 placeholder="Search for category or course"
               />
             </InputField>
-            <InputField style={{ width: "30%" }}>
+            <InputField style={{ width: "20%" }}>
               <button className="btn-search" type="button">
                 Search
               </button>
             </InputField>
           </InnerForm>
         </FormContainer>
-        <OptionLinks to="/courses">Courses</OptionLinks>
-        <OptionLinks to="/">About</OptionLinks>
         {currentUser ? (
-          <div style={{display: 'flex'}}>
-          <OptionLinks to="/my_courses">My courses</OptionLinks>
-          <CustomButton onClick={() => auth.signOut()}>Sign Out</CustomButton>
-          </div>
+          <BeforeAfter>
+            <OptionLinks to="/my_courses">My courses</OptionLinks>
+            <CustomButton onClick={() => auth.signOut()}>Sign Out</CustomButton>
+          </BeforeAfter>
         ) : (
+          <BeforeAfter>
+          <OptionLinks to="/">About</OptionLinks>
           <Link to="/sign_in" style={{ textDecoration: "none" }}>
             <CustomButton>Log In</CustomButton>
           </Link>
+          </BeforeAfter>
         )}
       </OptionsContainer>
     </HeaderContainer>
