@@ -7,11 +7,11 @@ import CourseDescription from "../Course-Description/Course-Description.componen
 import CourseCurriculumn from "../Course-Curriculumn/Course-Curriculumn.component";
 import CourseReviews from "../Course-Reviews/Course-Reviews.component";
 
-import { enrollInCourse } from "../../redux/courses/courses.actions";
+import { enrollInCourse, quitCourse } from "../../redux/courses/courses.actions";
 
 import { CourseDetailsContainer, EnrollAndQuit } from "./Course-Details.styles";
 
-const CourseDetails = ({ course, currentUser, enrollInCourse }) => {
+const CourseDetails = ({ course, currentUser, enrollInCourse, quitCourse }) => {
   const { title, authorName, ratings, numberOfStudents } = course;
   return (
     <div>
@@ -29,7 +29,7 @@ const CourseDetails = ({ course, currentUser, enrollInCourse }) => {
             <CustomButton onClick={() => enrollInCourse(course)}>
               Enroll
             </CustomButton>
-            <CustomButton onClick={() => enrollInCourse(course)} isLogin>
+            <CustomButton onClick={() => quitCourse(course)} isLogin>
               Quit course
             </CustomButton>
           </EnrollAndQuit>
@@ -52,6 +52,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   enrollInCourse: (course) => dispatch(enrollInCourse(course)),
+  quitCourse: (course) => dispatch(quitCourse(course)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CourseDetails);
