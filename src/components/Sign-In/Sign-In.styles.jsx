@@ -1,15 +1,6 @@
 import styled from "styled-components";
 import { Card } from "react-bootstrap";
 
-export const AuthButtonsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
-  i {
-    font-size: 1.2em;
-  }
-`;
-
 export const SignInContainer = styled.div`
   margin-top: 2em;
   font-family: "Poppins", sans-serif;

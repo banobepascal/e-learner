@@ -53,19 +53,24 @@ export const OptionLinks = styled(Link)`
   }
 `;
 
-export const AuthLinks = styled(Link)`
-  text-decoration: none;
+export const AuthLinks = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  Link {
+    padding-left: 1em;
+  }
 `;
 
 export const AuthButton = styled(CustomButton)`
-background: transparent;
+  background: transparent;
   cursor: pointer;
   transition: all 0.2s ease-out, color 0.2s ease-out;
 `;
 
 export const FormContainer = styled.form`
-padding-left: 2em;
-  width: 60%;
+  padding-left: 2em;
+  width: 70%;
   margin-bottom: 0;
 `;
 
@@ -94,7 +99,6 @@ export const InputField = styled.div`
     font-size: 16px;
     outline: none;
     padding-left: 1em;
-
 
     &:placeholder {
       color: #888;
