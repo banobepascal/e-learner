@@ -24,3 +24,9 @@ export const NavbarTabs = styled.div`
   }
 `;
 
+export const EnrollAndQuit = styled.div`
+  button {
+    margin-left: 2em;
+  }
+`;
+

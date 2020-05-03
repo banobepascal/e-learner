@@ -22,7 +22,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 102,
@@ -46,7 +47,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 103,
@@ -70,7 +72,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 104,
@@ -94,7 +97,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 105,
@@ -118,7 +122,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 106,
@@ -142,7 +147,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 107,
@@ -166,7 +172,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 108,
@@ -190,7 +197,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 109,
@@ -214,7 +222,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 110,
@@ -238,7 +247,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 112,
@@ -262,7 +272,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 113,
@@ -286,7 +297,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 116,
@@ -310,7 +322,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 115,
@@ -334,7 +347,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 155,
@@ -358,7 +372,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 111,
@@ -382,7 +397,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 16,
@@ -406,7 +422,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     },
     {
       "id": 114,
@@ -430,7 +447,8 @@
           "lesson": "basic javascript functions"
         }
       ],
-      "ratings": 4.5
+      "ratings": 4.5,
+      "enroll": false
     }
   ]
 }

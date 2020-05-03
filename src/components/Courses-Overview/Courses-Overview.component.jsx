@@ -11,7 +11,6 @@ import {
 } from "./Courses-Overview.styles";
 
 const CoursesOverview = ({ courses }) => {
-  console.log(courses);
   return (
     <CoursesPageContainer>
       <HeaderImg>

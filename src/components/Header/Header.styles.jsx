@@ -16,15 +16,12 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  width: 20%;
-  display: flex;
-  padding: 8px 0;
+  margin: 1em 0;
 
   p {
     font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     color: #fc3c64;
-    padding: 8px 2px 0 0;
     font-size: 1.5em;
   }
 
@@ -34,7 +31,7 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const OptionsContainer = styled.div`
-  width: 100%;
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,12 +50,12 @@ export const OptionLinks = styled(Link)`
   }
 `;
 
-export const AuthLinks = styled.div`
+export const BeforeAfter = styled.div`
   display: flex;
   justify-content: space-between;
 
-  Link {
-    padding-left: 1em;
+  button {
+    margin-left: 2.5em;
   }
 `;
 
@@ -69,8 +66,7 @@ export const AuthButton = styled(CustomButton)`
 `;
 
 export const FormContainer = styled.form`
-  padding-left: 2em;
-  width: 70%;
+  width: 60%;
   margin-bottom: 0;
 `;
 
