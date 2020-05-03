@@ -1,11 +1,16 @@
-export const enrollCourse = (myCourses, courseToAdd) => {
+export const enrollCourse = (myCourses, courseToEnroll) => {
   const existingCourse = myCourses.find(
-    (course) => course.id === courseToAdd.id
+    (course) => course.id === courseToEnroll.id
   );
 
   if (existingCourse) {
-    return myCourses;
+    return myCourses.map((course) =>
+    course.id === courseToEnroll.id
+      ? { ...course, enroll: !course.enroll}
+      : course
+  );;
   }
 
-  return [...myCourses, { ...courseToAdd }];
+  return [...myCourses, { ...courseToEnroll, enroll: false }];
 };
+

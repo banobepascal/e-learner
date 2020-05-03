@@ -13,7 +13,7 @@ import {
 
 import { CourseDetailsContainer } from "./Course-Details.styles";
 
-const CourseDetails = ({ course, currentUser, enrollInCourse, quitCourse }) => {
+const CourseDetails = ({ course, currentUser, enrollInCourse}) => {
   const { title, authorName, ratings, numberOfStudents, enroll } = course;
   return (
     <div>
@@ -28,7 +28,7 @@ const CourseDetails = ({ course, currentUser, enrollInCourse, quitCourse }) => {
         </p>
         {currentUser ? (
           <CustomButton onClick={() => enrollInCourse(course)}>
-            {enroll ? "Enroll" : "Enrolled"}
+            {enroll ? "Enrolled" : "Enroll"}
           </CustomButton>
         ) : (
           <p>Log in to enroll in course</p>
