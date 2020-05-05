@@ -20,11 +20,11 @@ const CourseDetails = ({ course, currentUser, enrollInCourse}) => {
       <HeaderImg isCourseDetails>
         <h2>{title}</h2>
         <p>
-          Created by <span> {authorName}</span>
-        </p>
-        <p>
           <i className="fa fa-star" aria-hidden="true"></i> {ratings}{" "}
           <span>{numberOfStudents} students enrolled</span>
+        </p>
+        <p>
+          Created by <span> {authorName}</span>
         </p>
         {currentUser ? (
           <CustomButton onClick={() => enrollInCourse(course)}>

@@ -14,23 +14,3 @@ export const enrollCourse = (myCourses, courseToEnroll) => {
   return [...myCourses, { ...courseToEnroll, enroll: false }];
 };
 
-export const startLesson = (courses, courseEnrolled, lessonToStart) => {
-  const existingCourse = courses.find(
-    (course) => course.id === courseEnrolled.id
-  );
-
-  if (existingCourse) {
-    return courses.map((course) =>
-      course.id === courseEnrolled.id
-        ? {
-            ...course,
-            lessonToStart: course.courseContent.map((lesson) =>
-              lesson.id ? { ...lesson, start: !lesson.start } : lesson
-            ),
-          }
-        : course
-    );
-  }
-
-  return [...courses, { ...courseEnrolled }];
-};
