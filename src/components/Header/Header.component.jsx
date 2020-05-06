@@ -34,7 +34,7 @@ const Header = ({ currentUser }) => {
               />
             </InputField>
             <InputField style={{ width: "10%" }}>
-              <button className="btn-search" type="button">
+              <button className="btn-search" type="submit">
                 <i className="fas fa-search"></i>
               </button>
             </InputField>
