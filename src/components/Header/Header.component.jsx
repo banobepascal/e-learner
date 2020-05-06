@@ -13,7 +13,7 @@ import {
   FormContainer,
   InnerForm,
   InputField,
-  BeforeAfter
+  BeforeAfter,
 } from "./Header.styles";
 
 const Header = ({ currentUser }) => {
@@ -40,20 +40,23 @@ const Header = ({ currentUser }) => {
             </InputField>
           </InnerForm>
         </FormContainer>
+        {currentUser ? (
+          <OptionLinks to="/my_courses">My courses</OptionLinks>
+        ) : (
           <OptionLinks to="/">About</OptionLinks>
+        )}
         {currentUser ? (
           <BeforeAfter>
-            <OptionLinks to="/my_courses">My courses</OptionLinks>
             <CustomButton onClick={() => auth.signOut()}>Sign Out</CustomButton>
           </BeforeAfter>
         ) : (
           <BeforeAfter>
-          <Link to="/sign_in" style={{ textDecoration: "none" }}>
-            <CustomButton isLogin>Log In</CustomButton>
-          </Link>
-          <Link to="/sign_up" style={{ textDecoration: "none" }}>
-            <CustomButton>Sign Up</CustomButton>
-          </Link>
+            <Link to="/sign_in" style={{ textDecoration: "none" }}>
+              <CustomButton isLogin>Log In</CustomButton>
+            </Link>
+            <Link to="/sign_up" style={{ textDecoration: "none" }}>
+              <CustomButton>Sign Up</CustomButton>
+            </Link>
           </BeforeAfter>
         )}
       </OptionsContainer>
