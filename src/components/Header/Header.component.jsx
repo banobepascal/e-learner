@@ -33,13 +33,14 @@ const Header = ({ currentUser }) => {
                 placeholder="Search for category or course"
               />
             </InputField>
-            <InputField style={{ width: "20%" }}>
+            <InputField style={{ width: "10%" }}>
               <button className="btn-search" type="button">
-                Search
+                <i className="fas fa-search"></i>
               </button>
             </InputField>
           </InnerForm>
         </FormContainer>
+          <OptionLinks to="/">About</OptionLinks>
         {currentUser ? (
           <BeforeAfter>
             <OptionLinks to="/my_courses">My courses</OptionLinks>
@@ -47,9 +48,11 @@ const Header = ({ currentUser }) => {
           </BeforeAfter>
         ) : (
           <BeforeAfter>
-          <OptionLinks to="/">About</OptionLinks>
           <Link to="/sign_in" style={{ textDecoration: "none" }}>
-            <CustomButton>Log In</CustomButton>
+            <CustomButton isLogin>Log In</CustomButton>
+          </Link>
+          <Link to="/sign_up" style={{ textDecoration: "none" }}>
+            <CustomButton>Sign Up</CustomButton>
           </Link>
           </BeforeAfter>
         )}

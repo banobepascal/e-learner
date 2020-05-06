@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 const loginStyles = css`
   background: transparent;
-  border: 2px solid #fc3c64;
+  border: 1px solid #686f7a;
   color: rgb(95, 93, 93);
 
   &:focus,
@@ -11,7 +11,7 @@ const loginStyles = css`
   &:link,
   &:active {
     background: none;
-    border: 2.5px solid #fc3c64;
+    border: 1px solid #000;
     color: #000;
     outline: none;
   }

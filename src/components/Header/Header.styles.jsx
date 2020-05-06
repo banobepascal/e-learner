@@ -55,7 +55,7 @@ export const BeforeAfter = styled.div`
   justify-content: space-between;
 
   button {
-    margin-left: 2.5em;
+    margin-left: 1.2em;
   }
 `;
 
@@ -66,7 +66,7 @@ export const AuthButton = styled(CustomButton)`
 `;
 
 export const FormContainer = styled.form`
-  width: 60%;
+  width: 50%;
   margin-bottom: 0;
 `;
 
