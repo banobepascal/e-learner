@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
+import {Button} from 'react-bootstrap';
 
-import CustomButton from '../Custom-Button/Custom-Button.component';
-import {CourseContent} from './Course-Lesson.styles';
+import { CourseContent } from "./Course-Lesson.styles";
 
-const CourseLesson = ({lesson}) => {
-    return ( 
-        <CourseContent>
-        <p>{lesson}</p>
-        <CustomButton>Start</CustomButton>
-      </CourseContent>
-     );
-}
- 
+const CourseLesson = ({ lesson}) => {
+  return (
+    <CourseContent>
+      <p>{lesson}</p>
+      <Button>preview</Button>
+    </CourseContent>
+  );
+};
+
 export default CourseLesson;

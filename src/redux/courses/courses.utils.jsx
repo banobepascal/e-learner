@@ -5,10 +5,10 @@ export const enrollCourse = (myCourses, courseToEnroll) => {
 
   if (existingCourse) {
     return myCourses.map((course) =>
-    course.id === courseToEnroll.id
-      ? { ...course, enroll: !course.enroll}
-      : course
-  );;
+      course.id === courseToEnroll.id
+        ? { ...course, enroll: !course.enroll }
+        : course
+    );
   }
 
   return [...myCourses, { ...courseToEnroll, enroll: false }];
