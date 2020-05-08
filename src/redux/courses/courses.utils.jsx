@@ -13,4 +13,3 @@ export const enrollCourse = (myCourses, courseToEnroll) => {
 
   return [...myCourses, { ...courseToEnroll, enroll: false }];
 };
-

@@ -5,6 +5,7 @@ import { enrollCourse } from "./courses.utils";
 const INITIAL_STATE = {
   courses: COURSES_DATA.data,
   myCourses: [],
+  filteredCourses: []
 };
 
 const coursesReducer = (state = INITIAL_STATE, action) => {
@@ -15,6 +16,10 @@ const coursesReducer = (state = INITIAL_STATE, action) => {
         myCourses: enrollCourse(state.myCourses, action.payload),
         courses: enrollCourse(state.courses, action.payload),
       };
+      case CourseActionTypes.SEARCH_COURSES: 
+      return {
+        
+      }
     default:
       return state;
   }

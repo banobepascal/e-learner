@@ -5,7 +5,6 @@ import CoursePreview from "../../components/Course-Preview/Course-Preview.compon
 import CoursesOverview from "../../components/Courses-Overview/Courses-Overview.component";
 
 const CoursesPage = ({ match }) => {
-  console.log(match);
   return (
     <div>
       <Route exact path={`${match.path}`} component={CoursesOverview} />

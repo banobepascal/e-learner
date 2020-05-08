@@ -16,3 +16,10 @@ export const selectMyCourses = createSelector(
   [selectCourses],
   (courses) => courses.myCourses
 );
+
+export const searchCourse = (searchInput) =>
+  createSelector([selectCoursesSections], (courses) =>
+    courses.filter((course) =>
+      course.title.toLowerCase().includes(searchInput.toLowerCase())
+    )
+  );
