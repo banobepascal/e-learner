@@ -13,3 +13,30 @@ export const enrollCourse = (myCourses, courseToEnroll) => {
 
   return [...myCourses, { ...courseToEnroll, enroll: false }];
 };
+
+export const searchCourse = (courses, searchInput) => {
+  courses.filter((course) =>
+    course.title.toLowerCase().includes(searchInput.toLowerCase())
+  );
+};
+
+const filterTodo =(e) =>
+ { 
+ var updatedList = this.state.todosInit;
+ updatedList = updatedList.filter((item =>{
+ return item.toLowerCase().search(
+ e.target.value.toLowerCase()) !== -1;
+ }) );
+ this.setState({ 
+ todos: updatedList,
+ });
+ if (updatedList == 0 ) {
+ this.setState({ 
+ message: true,
+ });
+ } else {
+ this.setState({ 
+ message: false,
+ });
+ }
+ }

@@ -14,7 +14,6 @@ import {
   OptionsContainer,
   OptionLinks,
   FormContainer,
-  InnerForm,
   InputField,
   BeforeAfter,
 } from "./Header.styles";
@@ -28,20 +27,16 @@ const Header = ({ currentUser }) => {
       <OptionsContainer>
         <OptionLinks to="/courses">Courses</OptionLinks>
         <FormContainer>
-          <InnerForm>
-            <InputField>
-              <input
-                id="search"
-                type="text"
-                placeholder="Search for category or course"
-              />
-            </InputField>
-            <InputField style={{ width: "10%" }}>
-              <button className="btn-search" type="submit">
-                <i className="fas fa-search"></i>
-              </button>
-            </InputField>
-          </InnerForm>
+          <InputField>
+            <input
+              id="search"
+              type="text"
+              placeholder="Search for category or course"
+            />
+          </InputField>
+          <button type="submit">
+            <i className="fas fa-search"></i>
+          </button>
         </FormContainer>
         {currentUser ? (
           <OptionLinks to="/my_courses">My courses</OptionLinks>

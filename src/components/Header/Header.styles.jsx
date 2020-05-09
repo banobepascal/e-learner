@@ -65,21 +65,27 @@ export const AuthButton = styled(CustomButton)`
   transition: all 0.2s ease-out, color 0.2s ease-out;
 `;
 
-export const FormContainer = styled.form`
+export const FormContainer = styled.div`
   width: 50%;
   margin-bottom: 0;
-`;
-
-export const InnerForm = styled.div`
-  background: #fff;
-  display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 3px;
+  display: -ms-flexbox;
+
+  button {
+    width: 10%;
+    padding: 11px;
+    white-space: nowrap;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    background: #fc3c64;
+    transition: all 0.2s ease-out, color 0.2s ease-out;
+    outline: none;
+
+    &:hover {
+      background: #e44f6e;
+    }
+  }
 `;
 
 export const InputField = styled.div`
@@ -99,22 +105,6 @@ export const InputField = styled.div`
     &:placeholder {
       color: #888;
       font-size: 16px;
-    }
-  }
-
-  button {
-    height: 100%;
-    width: 100%;
-    white-space: nowrap;
-    color: #fff;
-    border: 0;
-    cursor: pointer;
-    background: #fc3c64;
-    transition: all 0.2s ease-out, color 0.2s ease-out;
-    outline: none;
-
-    &:hover {
-      background: #e44f6e;
     }
   }
 `;
