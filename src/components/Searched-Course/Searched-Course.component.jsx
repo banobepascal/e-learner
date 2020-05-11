@@ -19,10 +19,10 @@ const SearchedCourse = ({
 }) => {
   return (
     <ListGroupContainer horizontal>
-      <CourseImage src={courseImageUrl} />
+      <CourseImage src={courseImageUrl}/>
       <CourseDetails>
         <TitleAndRatings>
-          <CourseLink to={`/courses/course/${slug}`}>
+          <CourseLink to={`course/${slug}`}>
             <h1>{title}</h1>
           </CourseLink>
           <i className="fa fa-star" aria-hidden="true">

@@ -3,13 +3,13 @@ import { Card, ListGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export const ListGroupContainer = styled(ListGroup)`
-border: 1px solid #ededed;
-background-color: #fff;
-margin-top: 1em;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  margin-top: 1em;
 `;
 
 export const CourseImage = styled.img`
-  height: 200px;
+  height: 30vh;
   width: 20%;
   border: 0;
 `;
@@ -54,13 +54,8 @@ export const Line = styled.hr`
   margin: 0;
 `;
 
-export const AuthorContainer = styled(Card.Body)`
-  display: flex;
-  max-height: 4em;
-  padding: 0;
-
+export const AuthorContainer = styled.div`
   p {
-    padding-top: 10px;
     color: #bbb;
 
     &:hover {
