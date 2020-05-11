@@ -7,8 +7,9 @@ import Homepage from "./Pages/Homepage/Homepage.component";
 import SignIn from "./components/Sign-In/Sign-In.component";
 import SignUp from "./components/Sign-Up/Sign-Up.component";
 import CoursesPage from "./Pages/Courses-Page/Courses-Page.component";
+import SingleCoursePage from "./Pages/Single-Course-Page/Single-Course-Page.component";
 import MyCoursesPage from './Pages/My-Courses-Page/My-Courses-Page.component';
-import SearchList from './components/Search-List/Search-List.component';
+import SearchResultPage from './Pages/Search-Results/Search-Results.component';
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -45,13 +46,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <SearchList/>
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route path="/courses" component={CoursesPage} />
           <Route path="/sign_in" component={SignIn} />
-          <Route exact path="/sign_up" component={SignUp} />
+          <Route path="/sign_up" component={SignUp} />
+          <Route path="/courses" component={CoursesPage} />
+          <Route path="/course" component={SingleCoursePage} />
           <Route path="/my_courses" component={MyCoursesPage} />
+          <Route path="/search" component={SearchResultPage} />
         </Switch>
       </div>
     );
