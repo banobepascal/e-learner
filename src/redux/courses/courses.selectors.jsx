@@ -18,7 +18,7 @@ export const selectMyCourses = createSelector(
 );
 
 export const searchCourse = (searchInput) =>
-  createSelector([selectCoursesSections], (courses) =>
+  createSelector([selectCourses], (courses) =>
     courses.filter((course) =>
       course.title.toLowerCase().includes(searchInput.toLowerCase())
     )

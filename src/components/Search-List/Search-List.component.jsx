@@ -2,18 +2,18 @@ import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import { selectCoursesSections } from "../../redux/courses/courses.selectors";
-import SearchedCourse from "../../components/Searched-Course/Searched-Course.component";
 import {
-  CoursesPageContainer,
-  CoursesContainer,
-} from "./Search-List.styles";
+  selectCoursesSections,
+  searchCourse,
+} from "../../redux/courses/courses.selectors";
+import SearchedCourse from "../../components/Searched-Course/Searched-Course.component";
+import { CoursesPageContainer, CoursesContainer } from "./Search-List.styles";
 
-const CoursesOverview = ({ courses }) => {
+const SearchList = ({ course }) => {
   return (
     <CoursesPageContainer>
       <CoursesContainer>
-        {courses.map(({ id, ...otherCourseProps }) => (
+        {course.map(({ id, ...otherCourseProps }) => (
           <SearchedCourse key={id} {...otherCourseProps} />
         ))}
       </CoursesContainer>
@@ -21,8 +21,8 @@ const CoursesOverview = ({ courses }) => {
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  courses: selectCoursesSections,
+const mapStateToProps = (state, ownProps) => ({
+  course: searchCourse(ownProps.match.params.title)(state),
 });
 
-export default connect(mapStateToProps)(CoursesOverview);
+export default connect(mapStateToProps)(SearchList);
