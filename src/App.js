@@ -8,8 +8,8 @@ import SignIn from "./components/Sign-In/Sign-In.component";
 import SignUp from "./components/Sign-Up/Sign-Up.component";
 import CoursesPage from "./Pages/Courses-Page/Courses-Page.component";
 import SingleCoursePage from "./Pages/Single-Course-Page/Single-Course-Page.component";
-import MyCoursesPage from './Pages/My-Courses-Page/My-Courses-Page.component';
-import SearchResultPage from './Pages/Search-Results/Search-Results.component';
+import MyCoursesPage from "./Pages/My-Courses-Page/My-Courses-Page.component";
+import SearchResultPage from "./Pages/Search-Results/Search-Results.component";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -20,6 +20,7 @@ class App extends Component {
 
   componentDidMount() {
     const { setCurrentUser } = this.props;
+
     this.unsubscribefromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
