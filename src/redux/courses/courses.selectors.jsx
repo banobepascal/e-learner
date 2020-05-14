@@ -23,3 +23,8 @@ export const searchCourse = (searchInput) =>
       course.title.toLowerCase().includes(searchInput.toLowerCase())
     )
   );
+
+export const selectIsFetchingCourses = createSelector(
+  [selectCourses],
+  (courses) => courses.isFetching
+);
