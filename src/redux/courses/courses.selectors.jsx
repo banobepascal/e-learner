@@ -4,7 +4,7 @@ const selectCourses = (state) => state.courses;
 
 export const selectCoursesSections = createSelector(
   [selectCourses],
-  (courses) => (courses ? courses.courses : [])
+  (courses) => (courses ? Object.keys(courses).map(key => courses[key]) : [])
 );
 
 export const selectCourse = (coursesUrlParam) =>

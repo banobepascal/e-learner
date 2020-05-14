@@ -15,24 +15,19 @@ const coursesReducer = (state = INITIAL_STATE, action) => {
     case CourseActionTypes.FETCH_COURSES_START:
       return {
         ...state,
-        isFetching: true
-      }
-      case CourseActionTypes.FETCH_COURSES_SUCCESS: 
+        isFetching: true,
+      };
+    case CourseActionTypes.FETCH_COURSES_SUCCESS:
       return {
         ...state,
         isFetching: false,
-        courses: action.payload
-      }
-      case CourseActionTypes.FETCH_COURSES_FAILURE: 
-      return {
-        ...state,
-        isFetching: false,
-        errorMessage: action.payload
-      }
-    case CourseActionTypes.UPDATE_COURSES:
-      return {
-        ...state,
         courses: action.payload,
+      };
+    case CourseActionTypes.FETCH_COURSES_FAILURE:
+      return {
+        ...state,
+        isFetching: false,
+        errorMessage: action.payload,
       };
     case CourseActionTypes.ENROLL_COURSE:
       return {
