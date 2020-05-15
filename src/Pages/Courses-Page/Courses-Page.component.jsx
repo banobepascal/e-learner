@@ -1,13 +1,10 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
 
-import Spinner from "../../components/Spinner/Spinner.component";
 import CoursesOverviewContainer from "../../components/Courses-Overview/Courses-Overview-Container.component";
 
 import { fetchCoursesStartAsync } from "../../redux/courses/courses.actions";
-import { selectIsFetchingCourses } from "../../redux/courses/courses.selectors";
 
 class CoursesPage extends React.Component {
   componentDidMount() {
@@ -16,15 +13,13 @@ class CoursesPage extends React.Component {
   }
 
   render() {
-    const { match, isCoursesFetching } = this.props;
+    const { match } = this.props;
     return (
       <div>
         <Route
           exact
           path={`${match.path}`}
           component={CoursesOverviewContainer} />
-          )}
-        />
       </div>
     );
   }
