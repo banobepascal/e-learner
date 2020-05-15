@@ -1,4 +1,3 @@
-import COURSES_DATA from "./courses.data.json";
 import CourseActionTypes from "./courses.types";
 import { enrollCourse } from "./courses.utils";
 

@@ -1,10 +1,15 @@
 import { createSelector } from "reselect";
 
-const selectCourses = (state) => state.courses;
+const selectCourses = (state) => state.courses_data;
+
+export const selectCoursesData = createSelector(
+  [selectCourses],
+  (courses_data) => courses_data.courses
+);
 
 export const selectCoursesSections = createSelector(
-  [selectCourses],
-  (courses) => (courses ? Object.keys(courses).map(key => courses[key]) : [])
+  [selectCoursesData],
+  (courses) => (courses ? Object.keys(courses).map((key) => courses[key]) : [])
 );
 
 export const selectCourse = (coursesUrlParam) =>
@@ -26,5 +31,10 @@ export const searchCourse = (searchInput) =>
 
 export const selectIsFetchingCourses = createSelector(
   [selectCourses],
-  (courses) => courses.isFetching
+  (courses_data) => courses_data.isFetching
+);
+
+export const selectIsCoursesLoaded = createSelector(
+  [selectCourses],
+  (courses_data) => !!courses_data.courses
 );

@@ -5,5 +5,5 @@ import userReducer from './user/user.reducer';
 
 export default combineReducers({
   user: userReducer,
-  courses: coursesReducer,
+  courses_data: coursesReducer,
 });
