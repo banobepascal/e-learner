@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import CustomButton from "../Custom-Button/Custom-Button.component";
-import Search from '../Search/Search.component';
 
 import { auth } from "../../firebase/firebase.utils";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
@@ -26,24 +25,22 @@ class Header extends Component {
           <p>E Learner</p>
         </LogoContainer>
         <OptionsContainer>
+          <OptionLinks to="/">About</OptionLinks>
           <OptionLinks to="/courses">Courses</OptionLinks>
-          <Search/>
           {currentUser ? (
             <OptionLinks to="/my_courses">My courses</OptionLinks>
-          ) : (
-            <OptionLinks to="/">About</OptionLinks>
-          )}
+          ) : null}
           {currentUser ? (
             <BeforeAfter>
               <CustomButton onClick={() => auth.signOut()}>
-                Sign Out
+                Log out
               </CustomButton>
             </BeforeAfter>
           ) : (
             <BeforeAfter>
-              <Link to="/sign_in" style={{ textDecoration: "none" }}>
-                <CustomButton isLogin>Log In</CustomButton>
-              </Link>
+              <OptionLinks to="/sign_in">
+                Log In
+              </OptionLinks>
               <Link to="/sign_up" style={{ textDecoration: "none" }}>
                 <CustomButton>Sign Up</CustomButton>
               </Link>

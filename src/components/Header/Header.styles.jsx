@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CustomButton from "../Custom-Button/Custom-Button.component";
 
 export const HeaderContainer = styled.div`
-  height: 10vh;
+  height: 9vh;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -16,7 +16,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  margin: 1em 0;
+  margin: 0.8em 0;
 
   p {
     font-family: "Fredoka One", cursive;
@@ -31,14 +31,13 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const OptionsContainer = styled.div`
-  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
 
 export const OptionLinks = styled(Link)`
-  margin: 0 2px;
+  margin: 0 2em;
   padding: 12px 15px;
   color: rgb(95, 93, 93);
 
@@ -46,7 +45,7 @@ export const OptionLinks = styled(Link)`
     text-decoration: none;
     color: rgb(95, 93, 93);
     background-color: #f2f2f2;
-    padding: 12px 15px;
+    padding: 8px 15px;
   }
 `;
 
