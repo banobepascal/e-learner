@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 
 import { FormContainer, InputField } from "./Search.styles";
 
@@ -9,7 +8,9 @@ class Search extends Component {
     results: {},
     loading: false,
     message: "",
-  };
+  }; 
+  
+ cancel = '';
 
   handleOnInputChange = (event) => {
     const query = event.target.value;
