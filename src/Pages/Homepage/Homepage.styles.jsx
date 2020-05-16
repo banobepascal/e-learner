@@ -3,7 +3,7 @@ import BackgroundImage from "../../assets/bg2.jpg";
 
 export const HomepageContainer = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 91vh;
   font-family: "Poppins", sans-serif;
   display: flex;
   background-image: linear-gradient(
@@ -36,11 +36,6 @@ export const MainSection = styled.div`
 
 export const StartedButton = styled.div`
   width: 160px;
-  ${'' /* margin: 5% auto; */}
-
-  &:hover {
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
-  }
 `;
 
 // export const FeatureContainer = styled.div`
