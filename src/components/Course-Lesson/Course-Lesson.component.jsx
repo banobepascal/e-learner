@@ -1,13 +1,13 @@
 import React from "react";
-import {Button} from 'react-bootstrap';
 
+import CustomButton from '../Custom-Button/Custom-Button.component';
 import { CourseContent } from "./Course-Lesson.styles";
 
 const CourseLesson = ({ lesson}) => {
   return (
     <CourseContent>
       <p>{lesson}</p>
-      <Button>preview</Button>
+      <CustomButton isLogin>preview</CustomButton>
     </CourseContent>
   );
 };
