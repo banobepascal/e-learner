@@ -4,6 +4,7 @@ const loginStyles = css`
   background: transparent;
   border: 1px solid #686f7a;
   color: rgb(95, 93, 93);
+  padding: 1px 25px;
 
   &:focus,
   &:hover,
@@ -21,6 +22,7 @@ const signUpStyles = css`
   background: #fc3c64;
   border: 1px solid #fc3c64;
   color: #fff;
+  padding: 8px 15px;
 
   &:focus,
   &:hover,
