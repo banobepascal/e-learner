@@ -6,7 +6,6 @@ const INITIAL_STATE = {
   isFetching: false,
   errorMessage: undefined,
   myCourses: [],
-  filteredCourses: [],
 };
 
 const coursesReducer = (state = INITIAL_STATE, action) => {
