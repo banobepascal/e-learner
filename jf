@@ -1,0 +1,133 @@
+[33m1d8aebf[m[33m ([m[1;36mHEAD -> [m[1;32mch-search-course[m[33m)[m HEAD@{0}: commit: ch - created search-list and searched-course components for search results
+[33mc1b63f0[m HEAD@{1}: reset: moving to HEAD
+[33mc1b63f0[m HEAD@{2}: commit: ch - created search-list and searched-course components for search results
+[33m13bb161[m HEAD@{3}: commit: ch - added styling to header and redux methods in courses
+[33m24d83d2[m HEAD@{4}: commit: ch - implenteting redux selectors for search of course
+[33mac7ed61[m HEAD@{5}: commit: ch - implemented selectors to handle currentUser of session
+[33m37f375f[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{6}: checkout: moving from master to ch-search-course
+[33m37f375f[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{7}: pull origin master: Fast-forward
+[33m3fd5018[m HEAD@{8}: checkout: moving from ch-refactoring to master
+[33mb684e63[m[33m ([m[1;31morigin/ch-refactoring[m[33m, [m[1;32mch-start-course-item[m[33m, [m[1;32mch-refactoring[m[33m)[m HEAD@{9}: checkout: moving from ch-start-course-item to ch-refactoring
+[33mb684e63[m[33m ([m[1;31morigin/ch-refactoring[m[33m, [m[1;32mch-start-course-item[m[33m, [m[1;32mch-refactoring[m[33m)[m HEAD@{10}: commit: ch - made changes to header component and custom button styles
+[33ma1caaa1[m HEAD@{11}: commit: ch - made changes to courses-data authorName and authorImage
+[33m940e466[m HEAD@{12}: commit: ch - made changes to header component and custom button styles
+[33m01b20da[m HEAD@{13}: commit: ch - made changes to header component and custom button styles
+[33m3e4ba47[m HEAD@{14}: commit: ch - added preview button to course-lesson
+[33m38fc0fd[m HEAD@{15}: commit: ch - made some code refactoring in redux and fixed issues in components
+[33m77c8e41[m HEAD@{16}: commit: ch - implemented redux actions to start course lesson
+[33m3fd5018[m HEAD@{17}: checkout: moving from master to ch-start-course-item
+[33m3fd5018[m HEAD@{18}: pull origin master: Fast-forward
+[33m18be215[m HEAD@{19}: checkout: moving from ft-enroll-course to master
+[33mb71fdae[m[33m ([m[1;31morigin/ft-enroll-course[m[33m, [m[1;32mft-enroll-course[m[33m)[m HEAD@{20}: commit: bg - fix in redux course.reducer enroll in course and refactored some code
+[33m57b1e76[m HEAD@{21}: commit: ch - refactored some code in redux
+[33me991bea[m HEAD@{22}: commit: ft - added my-courses-page route to app
+[33mcddf051[m HEAD@{23}: commit: bg - fix on layout of custom-button
+[33m0e8ff16[m HEAD@{24}: commit: ch - added redux functions and actions to course-details
+[33mfd25a1a[m HEAD@{25}: commit: bg - fixed a responsive bug in sign-up component
+[33mec9a898[m HEAD@{26}: commit: ch - made some header changes to links and layout
+[33m484eb6c[m HEAD@{27}: commit: ch - refactored my-courses page component and created new component
+[33m5e4c372[m HEAD@{28}: commit: ft - created course.utils redux functions to handle enroll and quit of course
+[33m229da9b[m HEAD@{29}: commit: ch - styling enroll and quit-course button
+[33m705ab9b[m HEAD@{30}: commit: ch - adding enroll and quit-course functionality
+[33m1bcc270[m HEAD@{31}: commit: ch - adding enroll and quit-course functionality
+[33m991f293[m HEAD@{32}: commit: ft - created my-courses page component and added link to header
+[33m647552a[m HEAD@{33}: commit: ft - created courses.type and courses.actions new methods to enrollincourse
+[33m11541a6[m[33m ([m[1;31morigin/ft-firebase-auth[m[33m, [m[1;32mft-firebase-auth[m[33m)[m HEAD@{34}: checkout: moving from ft-firebase-auth to ft-enroll-course
+[33m11541a6[m[33m ([m[1;31morigin/ft-firebase-auth[m[33m, [m[1;32mft-firebase-auth[m[33m)[m HEAD@{35}: commit: ft - created methods to login and signout into sign-in and sign-out components
+[33m5b305b9[m HEAD@{36}: commit: ft - added user to redux and implemented redux methods to make user accesible throught entire app
+[33mf78a8c2[m HEAD@{37}: commit: ch -refactored some code and removed unused variable
+[33mbdb98b6[m HEAD@{38}: commit: ch - added auth-button component to sign-in
+[33mab66ffd[m HEAD@{39}: commit: ft(added authentication to sign-up component):
+[33m8e3c19d[m HEAD@{40}: commit: ch - created auth-buttons component to handle third party auth
+[33m84cd152[m HEAD@{41}: commit: ft - storing user data in app
+[33mde3f43f[m HEAD@{42}: commit: ft - implemented snapshot to store authenticated user to firestore database
+[33mb617918[m HEAD@{43}: commit: ft - added currentUser state to app and header component
+[33m33b3d23[m HEAD@{44}: commit: ft - added github signin oauth to sign-up component
+[33md249510[m HEAD@{45}: commit: ft - added github signin oauth to sign-in component
+[33mdbb3ee0[m HEAD@{46}: commit: ft - added google signin with firebase in app
+[33m49892aa[m HEAD@{47}: commit: installed firebase
+[33mf1ee955[m HEAD@{48}: commit: ch - adding firebase utils to app
+[33m18be215[m HEAD@{49}: checkout: moving from master to ft-firebase-auth
+[33m18be215[m HEAD@{50}: pull origin master: Fast-forward
+[33mbc546c1[m HEAD@{51}: checkout: moving from ft-authentication to master
+[33m053372c[m[33m ([m[1;31morigin/ft-authentication[m[33m, [m[1;32mft-authentication[m[33m)[m HEAD@{52}: commit: bg - fixed link styles and refactored some code
+[33m0773604[m HEAD@{53}: commit: ch - changed styles of sign-in, sign-up components, removed signIn-signUp page
+[33m9586d98[m HEAD@{54}: commit: ch - made changes to header links and styles
+[33m0acb69a[m HEAD@{55}: commit: ch - added sign-up route to app, changed custom-button styles
+[33m1a2f8db[m HEAD@{56}: commit: ft (created sign-up component):
+[33m2c07a25[m HEAD@{57}: commit: ft(added sign-up component to homepage):
+[33m7d38793[m HEAD@{58}: commit: ch (added more styles and design to sign-in component):
+[33m38f8fad[m HEAD@{59}: commit: ft(created sign-in component):
+[33mbc546c1[m HEAD@{60}: checkout: moving from master to ft-authentication
+[33mbc546c1[m HEAD@{61}: pull origin master: Fast-forward
+[33m9a5a036[m HEAD@{62}: checkout: moving from ft-course-details to master
+[33m92a05ac[m[33m ([m[1;31morigin/ft-course-details[m[33m, [m[1;32mft-course-details[m[33m)[m HEAD@{63}: commit: ft(finished styling and fixing bugs for course-details page)
+[33ma3a2ff9[m HEAD@{64}: commit: ch - styled headerimg
+[33md76152e[m HEAD@{65}: commit: ft (created course-lesson component): changed courseContent in data to array
+[33ma51cd11[m HEAD@{66}: commit: ft (created course-lesson component): changed courseContent in data to array
+[33m3319240[m HEAD@{67}: commit: bg (fix course-details component to show course):
+[33mc8bff83[m HEAD@{68}: commit: ch (changed courses-data from js to json)
+[33m4e2c30b[m HEAD@{69}: commit: added styles to signin-signup component
+[33m31421dd[m HEAD@{70}: commit: created sign-in-sign-up page component
+[33m586c99e[m HEAD@{71}: commit: added find method in course selector
+[33m80b9cb0[m HEAD@{72}: commit: modified course.data
+[33m4fe66a7[m HEAD@{73}: commit: ft(refactored course-details components):
+[33m4a463c8[m HEAD@{74}: commit: ft(adding content and styling course-detail component):
+[33mcc09b22[m HEAD@{75}: commit: ft (created header-img component): added component to other components
+[33m6f070c4[m HEAD@{76}: commit: added course-details component to courses-page
+[33m85b21e9[m HEAD@{77}: commit: created course-details component
+[33ma76c15e[m HEAD@{78}: commit: adding data to courses.data
+[33m9a5a036[m HEAD@{79}: checkout: moving from master to ft-course-details
+[33m9a5a036[m HEAD@{80}: pull origin master: Fast-forward
+[33m6883795[m HEAD@{81}: checkout: moving from ft-redux-state to master
+[33mfd45ea5[m[33m ([m[1;31morigin/ft-redux-state[m[33m, [m[1;32mft-redux-state[m[33m)[m HEAD@{82}: commit: Bg(changed app state and components):
+[33m3cc2a4c[m HEAD@{83}: commit: bg - fixed courses_data in redux
+[33mf87f874[m HEAD@{84}: checkout: moving from ft-redux-state to ft-redux-state
+[33mf87f874[m HEAD@{85}: checkout: moving from ft-routing to ft-redux-state
+[33m70c3920[m[33m ([m[1;31morigin/ft-routing[m[33m, [m[1;32mft-routing[m[33m)[m HEAD@{86}: checkout: moving from ft-redux-state to ft-routing
+[33mf87f874[m HEAD@{87}: commit: bg - fix on courses data in redux
+[33md80f34e[m HEAD@{88}: commit: renamed and refactored components and folders
+[33mb9d201c[m HEAD@{89}: commit: added courses route on header
+[33m497a95f[m HEAD@{90}: commit: renamed categories to category-overview component
+[33mb48596b[m HEAD@{91}: commit: ft(renamed components and folders): refactored some code
+[33m8ca5d5c[m HEAD@{92}: commit: ch - added nested routing and new categoriesPage component
+[33med98671[m HEAD@{93}: commit: ft(setup redux functions in app):
+[33m0ab624e[m HEAD@{94}: commit: installed react-redux dependecy and added provider to index.js
+[33m70c3920[m[33m ([m[1;31morigin/ft-routing[m[33m, [m[1;32mft-routing[m[33m)[m HEAD@{95}: checkout: moving from ft-routing to ft-redux-state
+[33m70c3920[m[33m ([m[1;31morigin/ft-routing[m[33m, [m[1;32mft-routing[m[33m)[m HEAD@{96}: commit: ft - added routing to header component
+[33m6883795[m HEAD@{97}: checkout: moving from master to ft-routing
+[33m6883795[m HEAD@{98}: pull origin master: Fast-forward
+[33me70bfc6[m HEAD@{99}: checkout: moving from ft-courses to master
+[33mf1bb451[m[33m ([m[1;31morigin/ft-courses[m[33m, [m[1;32mft-courses[m[33m)[m HEAD@{100}: commit: ch - changed courses component layout, modified APP DATA, refactored some code
+[33m0e07c71[m HEAD@{101}: commit: ch - changed courses component layout, modified APP DATA, refactored some code
+[33m5a9dab5[m HEAD@{102}: commit: ft - (courses page and course component):
+[33me70bfc6[m HEAD@{103}: merge master: Fast-forward
+[33mbf099e0[m HEAD@{104}: checkout: moving from master to ft-courses
+[33me70bfc6[m HEAD@{105}: pull origin master: Fast-forward
+[33mbf099e0[m HEAD@{106}: checkout: moving from ft-categories to master
+[33m7ac5e59[m[33m ([m[1;31morigin/ft-categories[m[33m, [m[1;32mft-categories[m[33m)[m HEAD@{107}: commit: ch - fix hover effect on title, added margin-bottom on categories-page-container
+[33m8ed00f5[m HEAD@{108}: checkout: moving from ft-courses to ft-categories
+[33mbf099e0[m HEAD@{109}: checkout: moving from master to ft-courses
+[33mbf099e0[m HEAD@{110}: pull origin master: Fast-forward
+[33m96eb073[m HEAD@{111}: checkout: moving from ft-categories to master
+[33m8ed00f5[m HEAD@{112}: commit: installed redux dependencies
+[33mb6c48b6[m HEAD@{113}: commit: Ft - added categories page to app:
+[33m21e1a86[m HEAD@{114}: commit: fix on header search form
+[33m96eb073[m HEAD@{115}: checkout: moving from master to ft-categories
+[33m96eb073[m HEAD@{116}: commit: ch - refactored login button with custom-button
+[33mcf515f9[m HEAD@{117}: pull origin master: Fast-forward
+[33m6cdbcfe[m HEAD@{118}: checkout: moving from ft-homepage to master
+[33m27e67b7[m[33m ([m[1;31morigin/ft-homepage[m[33m, [m[1;32mft-homepage[m[33m)[m HEAD@{119}: commit: ft(created and designed homepage): added homepage to app
+[33m10ebfc6[m HEAD@{120}: commit: removed sign up button from header
+[33maaa2193[m HEAD@{121}: commit: ch - added background image and content to homepage
+[33m37a22bd[m HEAD@{122}: commit: fixed logo on header
+[33m2400d4d[m[33m ([m[1;31morigin/ft-header[m[33m, [m[1;32mft-header[m[33m)[m HEAD@{123}: checkout: moving from master to ft-homepage
+[33m6cdbcfe[m HEAD@{124}: pull origin master: Fast-forward
+[33ma920254[m HEAD@{125}: checkout: moving from ft-header to master
+[33m2400d4d[m[33m ([m[1;31morigin/ft-header[m[33m, [m[1;32mft-header[m[33m)[m HEAD@{126}: commit: ft(created and styled Header(navbar) component):
+[33mec08f13[m HEAD@{127}: commit: ft(created and styled Header(navbar) component):
+[33m6d0cfdf[m HEAD@{128}: commit: ch - installing react-router-dom dependency
+[33m7a680f5[m HEAD@{129}: commit: ch - installed react-bootsrap and bootstrap
+[33md3fb858[m HEAD@{130}: commit: installed styled components
+[33ma920254[m HEAD@{131}: checkout: moving from master to ft-header
+[33ma920254[m HEAD@{132}: clone: from https://github.com/banobepascal/e-learner.git

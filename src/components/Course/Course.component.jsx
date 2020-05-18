@@ -24,7 +24,7 @@ const Course = ({
     <Card>
       <CourseImage src={courseImageUrl} />
       <CourseDetails>
-      <CourseLink to={`/courses/course/${slug}`}>
+      <CourseLink to={`course/${slug}`}>
         <h1>{title}</h1>
       </CourseLink>
         <p>{category}</p>

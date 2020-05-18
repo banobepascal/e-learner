@@ -7,13 +7,11 @@ import CourseDescription from "../Course-Description/Course-Description.componen
 import CourseCurriculumn from "../Course-Curriculumn/Course-Curriculumn.component";
 import CourseReviews from "../Course-Reviews/Course-Reviews.component";
 
-import {
-  enrollInCourse,
-} from "../../redux/courses/courses.actions";
+import { enrollInCourse } from "../../redux/courses/courses.actions";
 
 import { CourseDetailsContainer } from "./Course-Details.styles";
 
-const CourseDetails = ({ course, currentUser, enrollInCourse}) => {
+const CourseDetails = ({ course, currentUser, enrollInCourse }) => {
   const { title, authorName, ratings, numberOfStudents, enroll } = course;
   return (
     <div>
@@ -27,9 +25,15 @@ const CourseDetails = ({ course, currentUser, enrollInCourse}) => {
           Created by <span> {authorName}</span>
         </p>
         {currentUser ? (
-          <CustomButton onClick={() => enrollInCourse(course)}>
-            {enroll ? "Enrolled" : "Enroll"}
-          </CustomButton>
+          <div>
+            {enroll ? (
+              <CustomButton>Enrolled</CustomButton>
+            ) : (
+              <CustomButton onClick={() => enrollInCourse(course)}>
+                Enroll
+              </CustomButton>
+            )}
+          </div>
         ) : (
           <p>Log in to enroll in course</p>
         )}

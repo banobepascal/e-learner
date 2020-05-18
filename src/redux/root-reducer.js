@@ -1,9 +1,18 @@
 import { combineReducers } from "redux";
+import { persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
 import coursesReducer from "./courses/courses.reducer";
-import userReducer from './user/user.reducer';
+import userReducer from "./user/user.reducer";
 
-export default combineReducers({
+const persistConfig = {
+  key: "root",
+  storage,
+};
+
+const rootReducer = combineReducers({
   user: userReducer,
-  courses: coursesReducer,
+  courses_data: coursesReducer,
 });
+
+export default persistReducer(persistConfig, rootReducer);

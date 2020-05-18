@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CustomButton from "../Custom-Button/Custom-Button.component";
 
 export const HeaderContainer = styled.div`
-  height: 10vh;
+  height: 9vh;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -16,7 +16,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  margin: 1em 0;
+  margin: 0.8em 0;
 
   p {
     font-family: "Fredoka One", cursive;
@@ -31,14 +31,13 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const OptionsContainer = styled.div`
-  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
 
 export const OptionLinks = styled(Link)`
-  margin: 0 2px;
+  margin: 0 2em;
   padding: 12px 15px;
   color: rgb(95, 93, 93);
 
@@ -46,7 +45,7 @@ export const OptionLinks = styled(Link)`
     text-decoration: none;
     color: rgb(95, 93, 93);
     background-color: #f2f2f2;
-    padding: 12px 15px;
+    padding: 8px 15px;
   }
 `;
 
@@ -65,21 +64,27 @@ export const AuthButton = styled(CustomButton)`
   transition: all 0.2s ease-out, color 0.2s ease-out;
 `;
 
-export const FormContainer = styled.form`
+export const FormContainer = styled.div`
   width: 50%;
   margin-bottom: 0;
-`;
-
-export const InnerForm = styled.div`
-  background: #fff;
-  display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 3px;
+  display: -ms-flexbox;
+
+  button {
+    width: 10%;
+    padding: 11px;
+    white-space: nowrap;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    background: #fc3c64;
+    transition: all 0.2s ease-out, color 0.2s ease-out;
+    outline: none;
+
+    &:hover {
+      background: #e44f6e;
+    }
+  }
 `;
 
 export const InputField = styled.div`
@@ -99,22 +104,6 @@ export const InputField = styled.div`
     &:placeholder {
       color: #888;
       font-size: 16px;
-    }
-  }
-
-  button {
-    height: 100%;
-    width: 100%;
-    white-space: nowrap;
-    color: #fff;
-    border: 0;
-    cursor: pointer;
-    background: #fc3c64;
-    transition: all 0.2s ease-out, color 0.2s ease-out;
-    outline: none;
-
-    &:hover {
-      background: #e44f6e;
     }
   }
 `;

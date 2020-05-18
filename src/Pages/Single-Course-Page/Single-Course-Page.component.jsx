@@ -2,24 +2,22 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
 
-import CoursesOverviewContainer from "../../components/Courses-Overview/Courses-Overview-Container.component";
-
+import CoursePreviewContainer from "../../components/Course-Preview/Course-Preview-Container.component";
 import { fetchCoursesStartAsync } from "../../redux/courses/courses.actions";
 
-class CoursesPage extends React.Component {
+class SingleCoursePage extends React.Component {
   componentDidMount() {
     const { fetchCoursesStartAsync } = this.props;
     fetchCoursesStartAsync();
   }
-
   render() {
     const { match } = this.props;
     return (
       <div>
         <Route
-          exact
-          path={`${match.path}`}
-          component={CoursesOverviewContainer} />
+          path={`${match.path}/:slug`}
+          component={CoursePreviewContainer}
+        />
       </div>
     );
   }
@@ -29,4 +27,4 @@ const mapDispatchToProps = (dispatch) => ({
   fetchCoursesStartAsync: () => dispatch(fetchCoursesStartAsync()),
 });
 
-export default connect(null, mapDispatchToProps)(CoursesPage);
+export default connect(null, mapDispatchToProps)(SingleCoursePage);
