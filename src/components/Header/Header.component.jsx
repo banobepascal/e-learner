@@ -25,7 +25,7 @@ class Header extends Component {
           <p>E Learner</p>
         </LogoContainer>
         <OptionsContainer>
-          <OptionLinks to="/">About</OptionLinks>
+          <OptionLinks to="/about">About</OptionLinks>
           <OptionLinks to="/courses">Courses</OptionLinks>
           {currentUser ? (
             <OptionLinks to="/my_courses">My courses</OptionLinks>
