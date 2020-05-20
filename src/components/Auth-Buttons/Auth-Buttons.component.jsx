@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-import { ReactComponent as Logo } from "../../assets/google.svg"
 import {
   signInWithGoogle,
   signInWithGithub,
@@ -11,8 +10,8 @@ import { AuthButtonsContainer } from "./Auth-Buttons.styles";
 const AuthButtons = () => {
   return (
     <AuthButtonsContainer>
-      <Button variant="dark" onClick={signInWithGoogle}>
-        <Logo/>
+      <Button onClick={signInWithGoogle}>
+        <i className="fab fa-google"></i>
       </Button>
       <Button variant="dark" onClick={signInWithGithub}>
         <i className="fab fa-github"></i>
