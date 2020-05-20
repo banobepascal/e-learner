@@ -9,7 +9,6 @@ import SignUp from "./components/Sign-Up/Sign-Up.component";
 import CoursesPage from "./Pages/Courses-Page/Courses-Page.component";
 import SingleCoursePage from "./Pages/Single-Course-Page/Single-Course-Page.component";
 import MyCoursesPage from "./Pages/My-Courses-Page/My-Courses-Page.component";
-import SearchResultPage from "./Pages/Search-Results/Search-Results.component";
 import AboutPage from './Pages/About-Page/About-Page.component';
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";

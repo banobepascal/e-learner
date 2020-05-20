@@ -21,7 +21,7 @@ const AboutPage = () => {
       <AboutDetailsContainer>
         <Card style={{ width: "18rem" }}>
           <ReviewCards>
-            <i className="fas fa-user-md" style={{ color: "#33CAFF" }}></i>
+            <i className="fas fa-user-md" style={{ color: "#0A69D5" }}></i>
             <h4>Get real employable skills</h4>
             <p>
               Our quality curriculum is designed with top-tier industry
@@ -52,7 +52,7 @@ const AboutPage = () => {
         </Card>
         <Card style={{ width: "18rem" }}>
           <ReviewCards>
-            <i className="far fa-clock" style={{ color: "#51A82F" }}></i>
+            <i className="far fa-comments" style={{ color: "#C459C4" }}></i>
             <h4>The help you need</h4>
             <p>
               Reach out to our mentors 24/7 and have your coding questions
