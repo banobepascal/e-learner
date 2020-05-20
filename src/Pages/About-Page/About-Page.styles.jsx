@@ -24,7 +24,7 @@ export const AboutDetailsContainer = styled.div`
   justify-content: space-between;
 `;
 
-export const ReviewCards = styled(Card.Body)`
+export const AboutCards = styled(Card.Body)`
   box-shadow: 0 0 4px 0 rgba(17, 22, 26, 0.16),
     0 2px 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.08);
 
