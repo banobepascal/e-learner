@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
+import { ReactComponent as Logo } from "../../assets/google.svg"
 import {
   signInWithGoogle,
   signInWithGithub,
@@ -10,14 +11,11 @@ import { AuthButtonsContainer } from "./Auth-Buttons.styles";
 const AuthButtons = () => {
   return (
     <AuthButtonsContainer>
-      <Button onClick={signInWithGoogle}>
-        <i className="fab fa-google"></i>
+      <Button variant="dark" onClick={signInWithGoogle}>
+        <Logo/>
       </Button>
       <Button variant="dark" onClick={signInWithGithub}>
         <i className="fab fa-github"></i>
-      </Button>
-      <Button type="submit" variant="info">
-        <i className="fab fa-twitter"></i>
       </Button>
     </AuthButtonsContainer>
   );
