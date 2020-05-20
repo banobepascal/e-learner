@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
 import Header from "./components/Header/Header.component";
 import Homepage from "./Pages/Homepage/Homepage.component";
@@ -9,10 +10,12 @@ import SignUp from "./components/Sign-Up/Sign-Up.component";
 import CoursesPage from "./Pages/Courses-Page/Courses-Page.component";
 import SingleCoursePage from "./Pages/Single-Course-Page/Single-Course-Page.component";
 import MyCoursesPage from "./Pages/My-Courses-Page/My-Courses-Page.component";
-import AboutPage from './Pages/About-Page/About-Page.component';
+import AboutPage from "./Pages/About-Page/About-Page.component";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
+import { selectCurrentUser } from "./redux/user/user.selectors";
+
 import "./App.css";
 
 class App extends Component {
@@ -49,8 +52,20 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route path="/sign_in" component={SignIn} />
-          <Route path="/sign_up" component={SignUp} />
+          <Route
+            exact
+            path="/sign_in"
+            render={() =>
+              this.props.currentUser ? <Redirect to="/courses" /> : <SignIn />
+            }
+          />
+          <Route
+            exact
+            path="/sign_up"
+            render={() =>
+              this.props.currentUser ? <Redirect to="/courses" /> : <SignUp />
+            }
+          />
           <Route path="/courses" component={CoursesPage} />
           <Route path="/course" component={SingleCoursePage} />
           <Route path="/my_courses" component={MyCoursesPage} />
@@ -61,8 +76,12 @@ class App extends Component {
   }
 }
 
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
+
 const mapDispatchToProps = (dispatch) => ({
   setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
