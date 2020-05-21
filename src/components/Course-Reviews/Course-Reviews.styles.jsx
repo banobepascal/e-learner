@@ -18,8 +18,12 @@ export const ReviewsContent = styled.div`
   background: #fff;
 
   div i {
-    color: orange;
+    color: #aaa;
     padding-right: 5px;
+  }
+
+  p {
+    padding:0 4em;
   }
 `;
 
@@ -27,8 +31,16 @@ export const ReviewTitleContainer = styled.div`
   color: #000;
   display: flex;
   justify-content: space-between;
+padding: 1em 0;
 `;
 
 export const ReviewAuthorDetails = styled.div`
   display: flex;
+
+  img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 1em;
+  }
 `;
