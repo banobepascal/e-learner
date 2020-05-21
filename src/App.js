@@ -12,10 +12,9 @@ import SingleCoursePage from "./Pages/Single-Course-Page/Single-Course-Page.comp
 import MyCoursesPage from "./Pages/My-Courses-Page/My-Courses-Page.component";
 import AboutPage from "./Pages/About-Page/About-Page.component";
 
-import { auth, createUserProfileDocument, addCollectionAndDocuments } from "./firebase/firebase.utils";
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
-import { selectCoursesSections } from "./redux/courses/courses.selectors";
 
 import "./App.css";
 
@@ -23,7 +22,7 @@ class App extends Component {
   unsubscribefromAuth = null;
 
   componentDidMount() {
-    const { setCurrentUser, coursesArray } = this.props;
+    const { setCurrentUser } = this.props;
 
     this.unsubscribefromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
@@ -40,10 +39,6 @@ class App extends Component {
       }
 
       setCurrentUser(userAuth);
-      addCollectionAndDocuments(
-        "courses",
-        coursesArray
-      );
     });
   }
 
@@ -83,7 +78,6 @@ class App extends Component {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
-  coursesArray: selectCoursesSections
 });
 
 const mapDispatchToProps = (dispatch) => ({
