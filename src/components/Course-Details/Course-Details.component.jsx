@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
 import CustomButton from "../Custom-Button/Custom-Button.component";
 import HeaderImg from "../Header-Img/Header-Img.component";
@@ -8,6 +9,7 @@ import CourseCurriculumn from "../Course-Curriculumn/Course-Curriculumn.componen
 import CourseReviews from "../Course-Reviews/Course-Reviews.component";
 
 import { enrollInCourse } from "../../redux/courses/courses.actions";
+import  {selectCurrentUser} from '../../redux/user/user.selectors'
 
 import { CourseDetailsContainer } from "./Course-Details.styles";
 
@@ -47,8 +49,8 @@ const CourseDetails = ({ course, currentUser, enrollInCourse }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  currentUser: state.user.currentUser,
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
 });
 
 const mapDispatchToProps = (dispatch) => ({

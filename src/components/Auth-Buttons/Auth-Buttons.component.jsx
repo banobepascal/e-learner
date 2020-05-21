@@ -16,9 +16,6 @@ const AuthButtons = () => {
       <Button variant="dark" onClick={signInWithGithub}>
         <i className="fab fa-github"></i>
       </Button>
-      <Button type="submit" variant="info">
-        <i className="fab fa-twitter"></i>
-      </Button>
     </AuthButtonsContainer>
   );
 };

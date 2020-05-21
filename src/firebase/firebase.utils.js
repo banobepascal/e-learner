@@ -67,6 +67,6 @@ googleProvider.setCustomParameters({ prompt: "select_account" });
 export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 
 const githubProvider = new firebase.auth.GithubAuthProvider();
-export const signInWithGithub = () => auth.signInWithRedirect(githubProvider);
+export const signInWithGithub = () => auth.signInWithPopup(githubProvider);
 
 export default firebase;

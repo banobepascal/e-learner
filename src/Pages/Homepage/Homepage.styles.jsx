@@ -20,8 +20,9 @@ export const HomepageContainer = styled.div`
 `;
 
 export const MainSection = styled.div`
-  text-align: center;
+  text-align: left;
   margin-top: 10%;
+  padding-right: 10%;
 
   h1 {
     font-weight: 700;
@@ -37,29 +38,3 @@ export const MainSection = styled.div`
 export const StartedButton = styled.div`
   width: 160px;
 `;
-
-// export const FeatureContainer = styled.div`
-//   margin: 8% auto 0 auto;
-//   width: 50%;
-//   display: flex;
-//   justify-content: space-between;
-// `;
-
-// export const Feature = styled.div`
-//   width: 100%; 
-// `;
-
-// export const FeatureTitle = styled.div`
-//   background: rgba(255, 255, 255, 0.15);
-//   padding: 5px 20px;
-
-//   h4 {
-//     font-size: 1.1em;
-//   }
-// `;
-
-// export const FeatureDescription = styled.div`
-//   padding: 20px 20px;
-//   background: #fff;
-//   height: 22vh;
-// `;

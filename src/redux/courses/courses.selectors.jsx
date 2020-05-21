@@ -22,13 +22,6 @@ export const selectMyCourses = createSelector(
   (courses) => courses.myCourses
 );
 
-export const searchCourse = (searchInput) =>
-  createSelector([selectCourses], (courses) =>
-    courses.filter((course) =>
-      course.title.toLowerCase().includes(searchInput.toLowerCase())
-    )
-  );
-
 export const selectIsFetchingCourses = createSelector(
   [selectCourses],
   (courses_data) => courses_data.isFetching
