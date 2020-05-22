@@ -25,6 +25,12 @@ export const ReviewsContent = styled.div`
   p {
     padding:0 4em;
   }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    p {
+      padding: 0;
+    }
+  }
 `;
 
 export const ReviewTitleContainer = styled.div`
