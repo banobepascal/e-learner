@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import Background from "../../assets/bg.jpg";
 
 const courseDetails = css`
-  height: 40vh;
+  height: 36vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${Background}) center center, cover;
 `;
@@ -32,7 +32,7 @@ export const HeaderTitle = styled.div`
   }
 
   h2 {
-    padding-top: 5%;
+    padding-top: 3%;
     color: #fc3c64;
     font-weight: bold;
   }
@@ -50,14 +50,29 @@ export const HeaderTitle = styled.div`
   }
 
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  height: 30vh;
     h4 {
       padding-top: 20%;
     }
+
+    h2 {
+      padding-top: 8%;
+    }
   }
 
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
     h4 {
       padding-top: 30%;
+    }
+
+
+    h2 {
+      padding-top: 10%;
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 0.8em;
     }
   }
 `;
