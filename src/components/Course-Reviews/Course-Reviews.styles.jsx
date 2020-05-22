@@ -17,19 +17,38 @@ export const ReviewsContent = styled.div`
   margin-top: 1em;
   background: #fff;
 
-  div i {
+  div p {
     color: #aaa;
-    padding-right: 5px;
+    padding: 0;
   }
 
   p {
-    padding:0 4em;
+    padding: 0 4em;
   }
 
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+  i {
+    display: none;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     p {
       padding: 0;
     }
+
+    i {
+      display: block;
+      color: orange;
+
+      span {
+        color: #aaa;
+      }
+    }
+  }
+`;
+
+export const Ratings = styled.div`
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    display: none;
   }
 `;
 
@@ -37,7 +56,6 @@ export const ReviewTitleContainer = styled.div`
   color: #000;
   display: flex;
   justify-content: space-between;
-padding: 1em 0;
 `;
 
 export const ReviewAuthorDetails = styled.div`

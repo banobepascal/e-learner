@@ -4,6 +4,7 @@ import ReactStars from "react-stars";
 import {
   ReviewContainer,
   ReviewsContent,
+  Ratings,
   ReviewTitleContainer,
   ReviewAuthorDetails,
 } from "./Course-Reviews.styles";
@@ -17,12 +18,16 @@ const CourseReviews = ({ ratings, authorImageUrl, authorName }) => {
             <img src={authorImageUrl} alt="" />
             <div>
               <div>{authorName}</div>
-              <i>2 weeks ago</i>
+              <p>2 weeks ago</p>
             </div>
           </ReviewAuthorDetails>
-          <div>
+          <Ratings>
             <ReactStars count={ratings} size={24} color1={"#ffd700"} />
-          </div>
+          </Ratings>
+          <i className="fa fa-star" aria-hidden="true">
+            {" "}
+            <span>{ratings}</span>
+          </i>
         </ReviewTitleContainer>
         <p>
           The lessons are prepared in a short and crisp fashion and in an easy
@@ -36,12 +41,16 @@ const CourseReviews = ({ ratings, authorImageUrl, authorName }) => {
             <img src={authorImageUrl} alt="" />
             <div>
               <div>{authorName}</div>
-              <i>1 weeks ago</i>
+              <p>1 weeks ago</p>
             </div>
           </ReviewAuthorDetails>
-          <div>
+          <Ratings>
             <ReactStars count={ratings} size={24} color1={"#ffd700"} />
-          </div>
+          </Ratings>
+          <i className="fa fa-star" aria-hidden="true">
+            {" "}
+            <span>{ratings}</span>
+          </i>
         </ReviewTitleContainer>
         <p>
           Its been an awesome experience so far. Its practically my first online
