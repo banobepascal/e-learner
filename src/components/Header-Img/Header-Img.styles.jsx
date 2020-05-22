@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import Background from "../../assets/bg.jpg";
 
 const courseDetails = css`
+  height: 40vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${Background}) center center, cover;
 `;
