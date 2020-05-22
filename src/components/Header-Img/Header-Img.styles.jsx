@@ -13,7 +13,7 @@ const getHeaderStyles = (props) => {
 };
 
 export const HeaderTitle = styled.div`
-  height: 40vh;
+  height: 30vh;
   background: url(${Background});
   background-size: cover;
   background-position: center center;
@@ -24,7 +24,7 @@ export const HeaderTitle = styled.div`
   ${getHeaderStyles}
 
   h4 {
-    padding-top: 10%;
+    padding-top: 8%;
     text-transform: uppercase;
     font-weight: bold;
     color: #fc3c64;
@@ -45,6 +45,18 @@ export const HeaderTitle = styled.div`
     span {
       padding-left: 0.5em;
       color: #000;
+    }
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    h4 {
+      padding-top: 20%;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    h4 {
+      padding-top: 30%;
     }
   }
 `;

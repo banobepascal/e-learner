@@ -15,11 +15,11 @@ export const MyCoursesContainer = styled.div`
     grid-gap: 2em;
   }
 
-  @media screen and (max-width: 900px) {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (max-width: 500px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     grid-template-columns: 1fr;
   }
 `;
