@@ -4,7 +4,6 @@ import { Card } from "react-bootstrap";
 export const AboutPageContainer = styled.div`
   font-family: "Poppins", sans-serif;
   text-align: center;
-  background: #fff;
 
   h3 {
     padding-top: 2em;
@@ -16,12 +15,38 @@ export const AboutPageContainer = styled.div`
       color: #fc3c64;
     }
   }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    h3 {
+      font-size: 1.2em;
+      padding: 2em 1em 0;
+    }
+
+    h5 {
+      font-size: 1em;
+    }
+  }
 `;
 
 export const AboutDetailsContainer = styled.div`
   margin: 3em 6.5vw 4em;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5em;
+
+  @media screen and (min-width: 1824px) {
+    padding: 0 20vw;
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
 `;
 
 export const AboutCards = styled(Card.Body)`
