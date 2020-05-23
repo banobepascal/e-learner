@@ -12,6 +12,10 @@ export const HeaderContainer = styled.div`
   font-size: 1em;
   color: #000;
   overflow: hidden;
+
+  @media screen and (min-width: 1824px) {
+    padding: 0 20vw;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
