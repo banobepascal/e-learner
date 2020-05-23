@@ -19,7 +19,7 @@ const AboutPage = () => {
         Learn for free with <span>E LEARNER</span>
       </h5>
       <AboutDetailsContainer>
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <AboutCards>
             <i className="fas fa-user-md" style={{ color: "#0A69D5" }}></i>
             <h4>Get real employable skills</h4>
@@ -30,7 +30,7 @@ const AboutPage = () => {
             </p>
           </AboutCards>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <AboutCards>
             <i className="far fa-lightbulb" style={{ color: "#FF9F33" }}></i>
             <h4>Project-based, active learning</h4>
@@ -40,7 +40,7 @@ const AboutPage = () => {
             </p>
           </AboutCards>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <AboutCards>
             <i className="far fa-clock" style={{ color: "#51A82F" }}></i>
             <h4>Learn on your schedule</h4>
@@ -50,7 +50,7 @@ const AboutPage = () => {
             </p>
           </AboutCards>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card>
           <AboutCards>
             <i className="far fa-comments" style={{ color: "#C459C4" }}></i>
             <h4>The help you need</h4>

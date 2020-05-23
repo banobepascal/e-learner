@@ -12,4 +12,12 @@ export const CourseContent = styled.div`
   p {
     padding-top: 12px;
   }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    button {
+      height: 2em;
+      padding: 1px 5px;
+      margin-top: 0.8em;
+    }
+  }
 `;
