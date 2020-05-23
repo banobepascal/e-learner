@@ -14,7 +14,7 @@ const BeforeAuthHeader = () => {
   return (
     <HeaderContainer>
       <LogoContainer to="/">
-        <p>E Learner</p>
+        E Learner
       </LogoContainer>
       <OptionsContainer>
         <OptionLinks to="/about">About</OptionLinks>

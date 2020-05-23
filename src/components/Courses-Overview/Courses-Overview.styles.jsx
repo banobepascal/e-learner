@@ -15,7 +15,7 @@ export const CoursesContainer = styled.div`
     grid-gap: 2em;
   }
 
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  @media only screen and (min-device-width: 520px) and (max-device-width: 1024px){
     grid-template-columns: 1fr 1fr;
   }
 

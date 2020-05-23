@@ -19,17 +19,17 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  margin: 0.8em 0;
-
-  p {
     font-family: "Fredoka One", cursive;
     text-transform: uppercase;
     color: #fc3c64;
     font-size: 1.5em;
-  }
+    align-items: center;
+    display: flex;
+    padding: 12px 15px;
 
   &:hover {
     text-decoration: none;
+    color: #fc3c64;
   }
 `;
 

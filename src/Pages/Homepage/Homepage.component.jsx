@@ -10,6 +10,7 @@ import { selectCurrentUser } from "../../redux/user/user.selectors";
 
 import {
   HomepageContainer,
+  Condiv,
   MainSection,
   StartedButton,
 } from "./Homepage.styles";
@@ -17,20 +18,22 @@ import {
 const Homepage = ({ currentUser }) => {
   return (
     <HomepageContainer>
-      <MainSection>
-        <h1>Get your Education today</h1>
-        <p>
-          Bring the world home and choose from over 20+ online video courses
-          with new additions published every month.{" "}
-        </p>
-        <p>Here at E Learner you get global knowledge at your fingertips.</p>
-        <StartedButton>
-          <Link to="/sign_up">
-            <CustomButton>Get Started</CustomButton>
-          </Link>
-        </StartedButton>
-      </MainSection>
-      {currentUser ? <Redirect to="/courses" /> : <SignIn />}
+        <MainSection>
+          <h1>Get your Education today</h1>
+          <p>
+            Bring the world home and choose from over 20+ online video courses
+            with new additions published every month.{" "}
+          </p>
+          <p>Here at E Learner you get global knowledge at your fingertips.</p>
+          <StartedButton>
+            <Link to="/sign_up">
+              <CustomButton>Get Started</CustomButton>
+            </Link>
+          </StartedButton>
+        </MainSection>
+      <Condiv>
+        {currentUser ? <Redirect to="/courses" /> : <SignIn />}
+      </Condiv>
     </HomepageContainer>
   );
 };
