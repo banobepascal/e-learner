@@ -9,4 +9,17 @@ export const MyCoursesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
+
+  @media screen and (min-width: 1824px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `;
