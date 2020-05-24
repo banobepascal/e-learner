@@ -37,6 +37,10 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (min-device-width: 220px) and (max-device-width: 760px) {
+   display: none;
+  }
 `;
 
 export const OptionLinks = styled(Link)`

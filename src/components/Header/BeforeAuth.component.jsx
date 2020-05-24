@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import CustomButton from "../Custom-Button/Custom-Button.component";
 
@@ -10,12 +10,11 @@ import {
   OptionLinks,
 } from "./Header.styles";
 
+import "./header.scss";
 const BeforeAuthHeader = () => {
   return (
     <HeaderContainer>
-      <LogoContainer to="/">
-        E Learner
-      </LogoContainer>
+      <LogoContainer to="/">E Learner</LogoContainer>
       <OptionsContainer>
         <OptionLinks to="/about">About</OptionLinks>
         <OptionLinks to="/courses">Courses</OptionLinks>
@@ -24,6 +23,13 @@ const BeforeAuthHeader = () => {
           <CustomButton>Sign Up</CustomButton>
         </Link>
       </OptionsContainer>
+      <div class="menu-bg"></div>
+      <div class="menu-burger">☰</div>
+      <div class="menu-items">
+        <div>CALL</div>
+        <div>DRIVE</div>
+        <div>MAIL</div>
+      </div>
     </HeaderContainer>
   );
 };
