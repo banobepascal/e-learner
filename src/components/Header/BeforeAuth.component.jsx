@@ -14,22 +14,19 @@ import "./header.scss";
 const BeforeAuthHeader = () => {
   return (
     <HeaderContainer>
-      <LogoContainer to="/">E Learner</LogoContainer>
-      <OptionsContainer>
+      <header>
+        <label class="hamburger" for="nav-toggle"></label>
+        <input id="nav-toggle" type="checkbox" class="hidden" />
+        <LogoContainer to="/">E Learner</LogoContainer>
+        <nav>
         <OptionLinks to="/about">About</OptionLinks>
         <OptionLinks to="/courses">Courses</OptionLinks>
         <OptionLinks to="/sign_in">Log In</OptionLinks>
         <Link to="/sign_up" style={{ textDecoration: "none" }}>
           <CustomButton>Sign Up</CustomButton>
         </Link>
-      </OptionsContainer>
-      <div class="menu-bg"></div>
-      <div class="menu-burger">☰</div>
-      <div class="menu-items">
-        <div>CALL</div>
-        <div>DRIVE</div>
-        <div>MAIL</div>
-      </div>
+        </nav>
+      </header>
     </HeaderContainer>
   );
 };
