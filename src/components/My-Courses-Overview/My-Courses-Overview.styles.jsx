@@ -15,11 +15,16 @@ export const MyCoursesContainer = styled.div`
     grid-gap: 2em;
   }
 
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
+  @media only screen and (max-device-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
   }
 
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (max-device-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-device-width: 480px) {
     grid-template-columns: 1fr;
   }
 `;
