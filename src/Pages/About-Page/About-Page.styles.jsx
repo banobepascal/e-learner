@@ -38,14 +38,17 @@ export const AboutDetailsContainer = styled.div`
     padding: 0 20vw;
   }
 
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  @media only screen and (max-device-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
   }
 
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (max-device-width: 760px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-device-width: 480px) {
     grid-template-columns: 1fr;
-    grid-gap: 1em;
   }
 `;
 
