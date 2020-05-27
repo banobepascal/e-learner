@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/5aa868c2b2a0288e4f9d/maintainability)](https://codeclimate.com/github/banobepascal/e-learner/maintainability)
+
+
 # E Learner
 E Learner is an online learning platform for students who would want to learn short courses or upgrade their specific skills in any field of preference. 
 
