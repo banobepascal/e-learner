@@ -39,6 +39,7 @@ npm start
 ## Routes
 |  Routes |  Pages  |
 |    --- |  ---  |
+|  `/`  |  `homepage`  |
 |  `/sign_up`  |  `signup`  |
 |  `/sign_in`  |  `login`  |
 |  `/courses`  |  `courses`  |
