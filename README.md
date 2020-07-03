@@ -32,6 +32,7 @@ npm start
 ```
 ## Features
 * Users can create their own user account.
+* Users can create an account using google
 * Users can sign in.
 * Users can view all courses.
 * Users can view a specific course.
